@@ -1,4 +1,4 @@
-# Momo condiguration for InMoov
+# Momo configuration for InMoov
 
 This repository contains the [MyRobotLab](http://myrobotlab.org/) [InMoov](http://inmoov.fr/) service configuration used by [Futurice](https://futurice.com) to study robot assisted speech therapy for children with autism. The particular physical robot is called Momo.
 
@@ -19,3 +19,17 @@ This repository...
 Install MyRobotLab as per instructions found in [here](https://github.com/MyRobotLab/inmoov/wiki/HOWTO---SETUP-&-PREREQUISITES) (you need to adjust for your OS of choice). 
 
 Replace the myrobotlab/InMoov directory with the one you find in this repository, after reading *considerations* above. 
+
+## Behaviour
+
+With this configuration, your robot will:
+
+* Try to talk with a Finnish accent, and some automatic messages will be in Finnish
+* Not do stuff unless prompted (live config is false)
+* Attach all limbs except torso
+* Attach OpenCV for the eye cam
+* Be able to do a bunch of *gestures* that are actually simplified sign language
+
+## Gestures
+
+TBD, implementation ongoing
