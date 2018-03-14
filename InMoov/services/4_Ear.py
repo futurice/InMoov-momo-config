@@ -34,14 +34,14 @@ ear = i01.ear
 ear.setAutoListen(setAutoListen)
 if EarEngine=="WebkitSpeechRecognition":ear.setContinuous(setContinuous)
 
-if not isWebGuiActivated and EarEngine=="WebkitSpeechRecognition":
+#if not isWebGuiActivated and EarEngine=="WebkitSpeechRecognition":
 # start the browsers and show the WebkitSpeechRecognition service named i01.ear
-  webgui = Runtime.create("webgui","WebGui")
-  webgui.autoStartBrowser(False)
-  webgui.startService()
-  isWebGuiActivated=True
+  #webgui = Runtime.create("webgui","WebGui")
+  #webgui.autoStartBrowser(False)
+  #webgui.startService()
+  #isWebGuiActivated=True
   
-if isWebGuiActivated and EarEngine=="WebkitSpeechRecognition":webgui.startBrowser("http://localhost:8888/#/service/i01.ear")
+#if isWebGuiActivated and EarEngine=="WebkitSpeechRecognition":webgui.startBrowser("http://localhost:8888/#/service/i01.ear")
 
 python.subscribe(ear.getName(),"recognized")
 chatBot=Runtime.create("chatBot", "ProgramAB")
