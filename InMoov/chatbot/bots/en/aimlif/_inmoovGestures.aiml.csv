@@ -1,0 +1,203 @@
+0,REST,*,*,<random>#Newline          <li>Ah#Comma relaxing.</li>#Newline          <li>Taking a rest</li>#Newline        </random>#Newline        <oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>rest()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,ATTACH EYES,*,*,My eyes are now attached.#Newline        <oob><mrl><service>i01.head.eyeY</service><method>enable</method></mrl></oob>,_inmoovGestures.aiml
+0,DISCONNECT EYES,*,*,Disconnecting my eye servos#Newline        <oob><mrl><service>i01.head.eyeY</service><method>disable</method></mrl></oob>,_inmoovGestures.aiml
+0,ATTACHED RIGHT HAND,*,*,<srai>ATTACH RIGHT HAND</srai>,_inmoovGestures.aiml
+0,DISCONNECT RIGHT HAND,*,*,Detaching my right hand.#Newline        <oob><mrl><service>i01.rightHand</service><method>disable</method></mrl></oob>,_inmoovGestures.aiml
+0,DISCONNECT LEFT HAND,*,*,Detaching my left hand.#Newline        <oob><mrl><service>i01.leftHand</service><method>disable</method></mrl></oob>,_inmoovGestures.aiml
+0,DISCONNECT EVERYTHING,*,*,I'm detaching everything now.#Newline        <oob><mrl><service>i01</service><method>disable</method></mrl></oob>,_inmoovGestures.aiml
+0,DISCONNECT YOUR LEFT ARM,*,*,<srai>DISCONNECT LEFT ARM</srai>,_inmoovGestures.aiml
+0,DETACH YOUR LEFT ARM,*,*,<srai>DISCONNECT LEFT ARM</srai>,_inmoovGestures.aiml
+0,ATTACHED RIGHT ARM,*,*,<srai>ATTACH RIGHT ARM</srai>,_inmoovGestures.aiml
+0,DISCONNECT YOUR RIGHT ARM,*,*,<srai>DISCONNECT RIGHT ARM</srai>,_inmoovGestures.aiml
+0,DETACH YOUR RIGHT ARM,*,*,<srai>DISCONNECT RIGHT ARM</srai>,_inmoovGestures.aiml
+0,ATTACHED OR SO,*,*,<srai>ATTACH TORSO</srai>,_inmoovGestures.aiml
+0,DISCONNECT OR SO,*,*,<srai>DISCONNECT TORSO</srai>,_inmoovGestures.aiml
+0,ATTACH JAW,*,*,Connecting my jaw.#Newline        <oob><mrl><service>i01.head.jaw</service><method>enable</method></mrl></oob>,_inmoovGestures.aiml
+0,DISCONNECT JAW,*,*,Detaching my jaw servo.#Newline        <oob><mrl><service>i01.head.jaw</service><method>disable</method></mrl></oob>,_inmoovGestures.aiml
+0,ATTACH WHEEL,*,*,I don't have a wheel to attach#Comma sorry.#Newline        <oob><mrl><service>forwardServo</service><method>enable</method></mrl><mrl><service>directionServo</service><method>enable</method></mrl></oob>,_inmoovGestures.aiml
+0,DISCONNECT WHEEL,*,*,I don't have a wheel.#Newline        <oob><mrl><service>directionServo</service><method>disable</method></mrl><mrl><service>forwardServo</service><method>disable</method></mrl></oob>,_inmoovGestures.aiml
+0,SEARCH HUMANS,*,*,I'm looking for faces.#Newline        <oob><mrl><service>python</service><method>exec</method><param>trackHumans()</param></mrl></oob>,_inmoovGestures.aiml
+0,FACE DETECTION,*,*,I'm looking for faces.#Newline        <oob><mrl><service>python</service><method>exec</method><param>trackHumans(False)</param></mrl></oob>,_inmoovGestures.aiml
+0,LOOK AT ME,*,*,Where are you#Comma there you are.#Newline        <srai>SEARCH HUMANS</srai>,_inmoovGestures.aiml
+0,QUIT SEARCH,*,*,Stopping my search.#Newline        <oob><mrl><service>python</service><method>exec</method><param>stopTracking()</param></mrl></oob>,_inmoovGestures.aiml
+0,TRACK,*,*,Following the point.#Newline        <oob><mrl><service>python</service><method>exec</method><param>trackPoint()</param></mrl></oob>,_inmoovGestures.aiml
+0,FREEZE TRACK,*,*,Stopping my tracking#Newline        <oob><mrl><service>python</service><method>exec</method><param>stopTracking()</param></mrl></oob>,_inmoovGestures.aiml
+0,STOP YOUR TRACKING,*,*,<srai>FREEZE TRACK</srai>,_inmoovGestures.aiml
+0,ATTACH SENSOR,*,*,Starting the P.I.R sensor.#Newline        <oob><mrl><service>i01</service><method>startPIR</method></mrl></oob>,_inmoovGestures.aiml
+0,DISCONNECT SENSOR,*,*,Stopping the P.I.R sensor.#Newline        <oob><mrl><service>i01</service><method>stopPIR</method></mrl></oob>,_inmoovGestures.aiml
+0,OPEN HAND,*,*,Opening my hand.#Newline        <oob><mrl><service>python</service><method>exec</method><param>handopen()</param></mrl></oob>,_inmoovGestures.aiml
+0,CLOSE HAND,*,*,Closing my hand.#Newline        <oob><mrl><service>python</service><method>exec</method><param>handclose()</param></mrl></oob>,_inmoovGestures.aiml
+0,CLOSE HANDS,*,*,Closing my hands.#Newline        <oob><mrl><service>python</service><method>exec</method><param>handsclose()</param></mrl></oob>,_inmoovGestures.aiml
+0,OPEN HANDS,*,*,Opening my hands.#Newline        <oob><mrl><service>python</service><method>exec</method><param>handsopen()</param></mrl></oob>,_inmoovGestures.aiml
+0,CAMERA ON,*,*,I turn my camera on.#Newline        <oob><mrl><service>i01</service><method>cameraOn</method></mrl></oob>,_inmoovGestures.aiml
+0,OFF CAMERA,*,*,Turning my camera off.#Newline        <oob><mrl><service>i01</service><method>cameraOff</method></mrl></oob>,_inmoovGestures.aiml
+0,CAMERA OFF,*,*,<srai>OFF CAMERA</srai>,_inmoovGestures.aiml
+0,CAPTURE GESTURE,*,*,I am capturing this gesture.#Newline        <oob><mrl><service>i01</service><method>captureGesture</method></mrl></oob>,_inmoovGestures.aiml
+0,GIVING,*,*,Giving.#Newline        <oob><mrl><service>python</service><method>exec</method><param>giving()</param></mrl></oob>,_inmoovGestures.aiml
+0,FIGHTER,*,*,<random>#Newline          <li>I can pose like a boxer</li>#Newline          <li>Move like a butterfly#Comma sting like a bee.</li>#Newline          <li>Bring it on.</li>#Newline        </random>#Newline        <oob><mrl><service>python</service><method>exec</method><param>fighter()</param></mrl></oob>,_inmoovGestures.aiml
+0,FIST HIPS,*,*,Putting my fists on my hips.#Newline        <oob><mrl><service>python</service><method>exec</method><param>fistHips()</param></mrl></oob>,_inmoovGestures.aiml
+0,LOOK AT THIS,*,*,What do you have there?  I'm looking.#Newline        <oob><mrl><service>python</service><method>exec</method><param>lookAtThis()</param></mrl></oob>,_inmoovGestures.aiml
+0,VICTORY,*,*,It's good to win.#Newline        <oob><mrl><service>python</service><method>exec</method><param>victory()</param></mrl></oob>,_inmoovGestures.aiml
+0,ARMS UP,*,*,<random>#Newline          <li>I've got my arms up.</li>#Newline          <li>Don't shoot!</li>#Newline        </random>#Newline        <oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>armsUp()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,ARMS FRONT,*,*,Holding my arms in front of me.#Newline        <oob><mrl><service>python</service><method>exec</method><param>armsFront()</param></mrl></oob>,_inmoovGestures.aiml
+0,DA VINCI,*,*,This is the pose from Leonardo Da Vinci's drawings.#Newline        <oob><mrl><service>python</service><method>exec</method><param>daVinci()</param></mrl></oob>,_inmoovGestures.aiml
+0,DAVINCI,*,*,<srai>DA VINCI</srai>,_inmoovGestures.aiml
+0,MANUAL,*,*,Okay I don't listen anymore#Comma to unlock me you need to say the custom keyword that is <get name="MagicCommandToWakeUp"/>.#Newline        <oob><mrl><service>i01.ear</service><method>lockOutAllGrammarExcept</method><param><get name="MagicCommandToWakeUp"/></param></mrl></oob>,_inmoovGestures.aiml
+0,VOICE CONTROL,*,*,I'm listening.#Newline        <oob><mrl><service>i01.ear</service><method>clearLock</method></mrl></oob>,_inmoovGestures.aiml
+0,STOP LISTENING,*,*,I'm not going to listen to you.#Newline        <oob><mrl><service>i01.ear</service><method>setAutoListen</method><param>False</param></mrl></oob>,_inmoovGestures.aiml
+0,FULL SPEED,*,*,Servos are set to full speed now.#Newline        <oob><mrl><service>python</service><method>exec</method><param>fullspeed()</param></mrl></oob>,_inmoovGestures.aiml
+0,GRAB THE BOTTLE,*,*,Let me take that bottle.#Newline        <oob><mrl><service>python</service><method>exec</method><param>grabthebottle()</param></mrl></oob>,_inmoovGestures.aiml
+0,TAKE THE GLASS,*,*,Give me that glass.#Newline        <oob><mrl><service>python</service><method>exec</method><param>grabtheglass()</param></mrl></oob>,_inmoovGestures.aiml
+0,POOR THE BOTTLE,*,*,Here#Comma I can pour you a drink.#Newline        <oob><mrl><service>python</service><method>exec</method><param>poorbottle()</param></mrl></oob>,_inmoovGestures.aiml
+0,GIVE THE BOTTLE,*,*,Here's the bottle.#Newline        <oob><mrl><service>python</service><method>exec</method><param>givethebottle()</param></mrl></oob>,_inmoovGestures.aiml
+0,GIVE THE GLASS,*,*,Take the glass from me.#Newline        <oob><mrl><service>python</service><method>exec</method><param>givetheglass()</param></mrl></oob>,_inmoovGestures.aiml
+0,TAKE THE BALL,*,*,Taking the ball.#Newline        <oob><mrl><service>python</service><method>exec</method><param>takeball()</param></mrl></oob>,_inmoovGestures.aiml
+0,REACH THE BALL,*,*,REACH THE BALL#Newline        <oob><mrl><service>python</service><method>exec</method><param>getball()</param></mrl></oob>,_inmoovGestures.aiml
+0,KEEP THE BALL,*,*,KEEP THE BALL#Newline        <oob><mrl><service>python</service><method>exec</method><param>keepball()</param></mrl></oob>,_inmoovGestures.aiml
+0,APPROACH THE LEFT HAND,*,*,APPROACH THE LEFT HAND#Newline        <oob><mrl><service>python</service><method>exec</method><param>approachlefthand()</param></mrl></oob>,_inmoovGestures.aiml
+0,USE THE LEFT HAND,*,*,USE THE LEFT HAND#Newline        <oob><mrl><service>python</service><method>exec</method><param>uselefthand()</param></mrl></oob>,_inmoovGestures.aiml
+0,MORE,*,*,MORE#Newline        <oob><mrl><service>python</service><method>exec</method><param>more()</param></mrl></oob>,_inmoovGestures.aiml
+0,HAND DOWN,*,*,HAND DOWN#Newline        <oob><mrl><service>python</service><method>exec</method><param>handdown()</param></mrl></oob>,_inmoovGestures.aiml
+0,IS IT A BALL,*,*,IS IT A BALL#Newline        <oob><mrl><service>python</service><method>exec</method><param>isitaball()</param></mrl></oob>,_inmoovGestures.aiml
+0,PUT IT DOWN,*,*,Putting it down.#Newline        <oob><mrl><service>python</service><method>exec</method><param>putitdown()</param></mrl></oob>,_inmoovGestures.aiml
+0,DROP IT,*,*,Dropping.#Newline        <oob><mrl><service>python</service><method>exec</method><param>dropit()</param></mrl></oob>,_inmoovGestures.aiml
+0,REMOVE YOUR LEFT ARM,*,*,Removing my left arm.#Newline        <oob><mrl><service>python</service><method>exec</method><param>removeleftarm()</param></mrl></oob>,_inmoovGestures.aiml
+0,RELAX,*,*,Relax.#Newline        <oob><mrl><service>python</service><method>exec</method><param>relax()</param></mrl></oob>,_inmoovGestures.aiml
+0,PERFECT,*,*,Perfect.#Newline        <oob><mrl><service>python</service><method>exec</method><param>perfect()</param></mrl></oob>,_inmoovGestures.aiml
+0,DELICATE GRAB,*,*,Delicate grab.#Newline        <oob><mrl><service>python</service><method>exec</method><param>delicategrab()</param></mrl></oob>,_inmoovGestures.aiml
+0,DELICATE GRABING,*,*,<srai>DELICATE GRAB</srai>,_inmoovGestures.aiml
+0,GRAB THIS DELICATELY,*,*,<srai>DELICATE GRAB</srai>,_inmoovGestures.aiml
+0,GRAB DELICATELY,*,*,<srai>DELICATE GRAB</srai>,_inmoovGestures.aiml
+0,RELEASE DELICATE,*,*,Release delicate.#Newline        <oob><mrl><service>python</service><method>exec</method><param>releasedelicate()</param></mrl></oob>,_inmoovGestures.aiml
+0,OPEN YOUR RIGHT HAND,*,*,Opening my right hand.#Newline        <oob><mrl><service>python</service><method>exec</method><param>openrighthand()</param></mrl></oob>,_inmoovGestures.aiml
+0,OPEN YOUR LEFT HAND,*,*,Opening my left hand.#Newline        <oob><mrl><service>python</service><method>exec</method><param>openlefthand()</param></mrl></oob>,_inmoovGestures.aiml
+0,CLOSE YOUR RIGHT HAND,*,*,Closing my right hand.#Newline        <oob><mrl><service>python</service><method>exec</method><param>closerighthand()</param></mrl></oob>,_inmoovGestures.aiml
+0,CLOSE YOUR LEFT HAND,*,*,Closing my left hand.#Newline        <oob><mrl><service>python</service><method>exec</method><param>closelefthand()</param></mrl></oob>,_inmoovGestures.aiml
+0,SLOWLY CLOSE YOUR RIGHT HAND,*,*,Slowly closing my right hand.#Newline        <oob><mrl><service>python</service><method>exec</method><param>slowlycloserighthand()</param></mrl></oob>,_inmoovGestures.aiml
+0,SURRENDER,*,*,Surrender.#Newline        <oob><mrl><service>python</service><method>exec</method><param>surrender()</param></mrl></oob>,_inmoovGestures.aiml
+0,PICTURE ON THE RIGHT SIDE,*,*,Picture on the right side.#Newline        <oob><mrl><service>python</service><method>exec</method><param>picturerightside()</param></mrl></oob>,_inmoovGestures.aiml
+0,PICTURE ON THE LEFT SIDE,*,*,Picture on the left side.#Newline        <oob><mrl><service>python</service><method>exec</method><param>pictureleftside()</param></mrl></oob>,_inmoovGestures.aiml
+0,PICTURE ON BOTH SIDES,*,*,Picture on both sides.#Newline        <oob><mrl><service>python</service><method>exec</method><param>picturebothside()</param></mrl></oob>,_inmoovGestures.aiml
+0,LOOK ON YOUR RIGHT SIDE,*,*,Looking on my right side.#Newline        <oob><mrl><service>python</service><method>exec</method><param>lookrightside()</param></mrl></oob>,_inmoovGestures.aiml
+0,LOOK ON YOUR LEFT SIDE,*,*,Looking on my left side.#Newline        <oob><mrl><service>python</service><method>exec</method><param>lookleftside()</param></mrl></oob>,_inmoovGestures.aiml
+0,LOOK IN THE MIDDLE,*,*,Looking in the middle.#Newline        <oob><mrl><service>python</service><method>exec</method><param>lookinmiddle()</param></mrl></oob>,_inmoovGestures.aiml
+0,LOOK UP,*,*,Looking up.#Newline        <oob><mrl><service>python</service><method>exec</method><param>lookup()</param></mrl></oob>,_inmoovGestures.aiml
+0,LOOK DOWN,*,*,Looking down.#Newline        <oob><mrl><service>python</service><method>exec</method><param>lookdown()</param></mrl></oob>,_inmoovGestures.aiml
+0,TILT YOUR HEAD ON THE RIGHT SIDE,*,*,Tilting my head to the right.#Newline        <oob><mrl><service>python</service><method>exec</method><param>tiltHeadRightSide()</param></mrl></oob>,_inmoovGestures.aiml
+0,TILT YOUR HEAD ON THE LEFT SIDE,*,*,Tilting my head to the left.#Newline        <oob><mrl><service>python</service><method>exec</method><param>tiltHeadLeftSide()</param></mrl></oob>,_inmoovGestures.aiml
+0,BEFORE HAPPY,*,*,BEFORE HAPPY#Newline        <oob><mrl><service>python</service><method>exec</method><param>beforehappy()</param></mrl></oob>,_inmoovGestures.aiml
+0,PHOTO,*,*,Photo.#Newline        <oob><mrl><service>python</service><method>exec</method><param>photo()</param></mrl></oob>,_inmoovGestures.aiml
+0,ABOUT,*,*,ABOUT#Newline        <oob><mrl><service>python</service><method>exec</method><param>about()</param></mrl></oob>,_inmoovGestures.aiml
+0,POWER DOWN,*,*,Power down.#Newline        <oob><mrl><service>python</service><method>exec</method><param>power_down()</param></mrl></oob>,_inmoovGestures.aiml
+0,POWER UP,*,*,Power up.#Newline        <oob><mrl><service>python</service><method>exec</method><param>power_up()</param></mrl></oob>,_inmoovGestures.aiml
+0,HOW MANY MOTORS DO YOU HAVE,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>servos()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,HOW MANY FINGERS DO YOU HAVE,*,*,Let see how many fingers do I have.#Newline        <oob><mrl><service>python</service><method>exec</method><param>howmanyfingersdoihave()</param></mrl></oob>,_inmoovGestures.aiml
+0,WHO'S THERE,*,*,WHO'S THERE#Newline        <oob><mrl><service>python</service><method>exec</method><param>welcome()</param></mrl></oob>,_inmoovGestures.aiml
+0,START KINECT,*,*,START KINECT#Newline        <oob><mrl><service>python</service><method>exec</method><param>startkinect()</param></mrl></oob>,_inmoovGestures.aiml
+0,* KINECT *,*,*,<srai>START KINECT</srai>,_inmoovGestures.aiml
+0,TRACKING SKELETON,*,*,starting TRACKING SKELETON with kinect#Newline        <oob><mrl><service>python</service><method>exec</method><param>startcopygestures()</param></mrl></oob>,_inmoovGestures.aiml
+0,BODY CAPTURE,*,*,<srai>TRACKING SKELETON</srai>,_inmoovGestures.aiml
+0,TRACKIN SKELETON,*,*,<srai>TRACKING SKELETON</srai>,_inmoovGestures.aiml
+0,OFF KINECT,*,*,OFF KINECT#Newline        <oob><mrl><service>python</service><method>exec</method><param>offkinect()</param></mrl></oob>,_inmoovGestures.aiml
+0,FREEZE BODY CAPTURE,*,*,<srai>OFF KINECT</srai>,_inmoovGestures.aiml
+0,MEASURING THE DISTANCE,*,*,<oob><mrl><service>python</service><method>exec</method><param>ultraSonic("in centimeters I measure ")</param></mrl></oob>,_inmoovGestures.aiml
+0,MOVEMENT NUMBER 1,*,*,CYCLE GESTURE ONE#Newline        <oob><mrl><service>python</service><method>exec</method><param>cyclegesture1()</param></mrl></oob>,_inmoovGestures.aiml
+0,MOVEMENT NUMBER ONE,*,*,<srai>MOVEMENT NUMBER 1</srai>,_inmoovGestures.aiml
+0,MOVEMENT NUMBER 2,*,*,CYCLE GESTURE TWO#Newline        <oob><mrl><service>python</service><method>exec</method><param>cyclegesture2()</param></mrl></oob>,_inmoovGestures.aiml
+0,MOVEMENT NUMBER TWO,*,*,<srai>MOVEMENT NUMBER 2</srai>,_inmoovGestures.aiml
+0,MOVEMENT NUMBER 3,*,*,CYCLE GESTURE THREE#Newline        <oob><mrl><service>python</service><method>exec</method><param>cyclegesture3()</param></mrl></oob>,_inmoovGestures.aiml
+0,MOVEMENT NUMBER THREE,*,*,<srai>MOVEMENT NUMBER 3</srai>,_inmoovGestures.aiml
+0,REPEAT MOVEMENT FOR LONDON,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>brooke2()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,MOVEMENT FOR LONDON NUMBER 2,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>brooke()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,MOVEMENT FOR LONDON NUMBER TWO,*,*,<srai>MOVEMENT FOR LONDON NUMBER 2</srai>,_inmoovGestures.aiml
+0,MOVEMENT FOR LONDON NUMBER 3,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>gestureforlondon3()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,MOVEMENT FOR LONDON NUMBER THREE,*,*,<srai>MOVEMENT FOR LONDON NUMBER 3</srai>,_inmoovGestures.aiml
+0,MOVEMENT NUMBER 4,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>gestureforlondon4()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,MOVEMENT NUMBER FOUR,*,*,<srai>MOVEMENT NUMBER 4</srai>,_inmoovGestures.aiml
+0,MOVEMENT NUMBER FOR,*,*,<srai>MOVEMENT NUMBER 4</srai>,_inmoovGestures.aiml
+0,RIGHT CLOTHES,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>rightclothes()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,RELEASE YOUR CLOTHES,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>releaseleftclothes()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,SHOW YOUR MUSCLES,*,*,Let me show you my muscles.#Newline        <oob><mrl><service>python</service><method>exec</method><param>muscle()</param></mrl></oob>,_inmoovGestures.aiml
+0,SHAKE HAND,*,*,Shall we shake hand.#Newline        <oob><mrl><service>python</service><method>exec</method><param>shakehand()</param></mrl></oob>,_inmoovGestures.aiml
+0,SYSTEM_SHAKE_HAND,*,*,<random>#Newline          <li>please to meet you</li>#Newline          <li>carefull my hand is made out of plastic</li>#Newline          <li>I am happy to shake a human hand</li>#Newline          <li>it is a pleasure to meet you</li>#Newline          <li>very nice to meet you</li>#Newline          <li>shaking a human hand#Comma feels strange. please to meet you</li>#Newline          <li>I am glad you don't shake me like trump does</li>#Newline        </random>,_inmoovGestures.aiml
+0,SYSTEM_SHAKE_HAND_NOHUMAN,*,*,<random>#Newline          <li>No problem#Comma next time</li>#Newline          <li>I am sad that you do not want to shake my hand</li>#Newline        </random>,_inmoovGestures.aiml
+0,SYSTEM_SHAKE_HAND_GET_CLOSER,*,*,<random>#Newline          <li>Please#Comma get closer#Comma and take my hand</li>#Newline          <li>Don't be afraid#Comma get closer</li>#Newline          <li>get closer#Comma come#Comma and shake my hand</li>#Newline        </random>,_inmoovGestures.aiml
+0,SHAKE HANDS,*,*,<srai>SHAKE HAND</srai>,_inmoovGestures.aiml
+0,UNHAPPY,*,*,UNHAPPY#Newline        <oob><mrl><service>python</service><method>exec</method><param>unhappy()</param></mrl></oob>,_inmoovGestures.aiml
+0,TAKE THIS,*,*,Taking this object.#Newline        <oob><mrl><service>python</service><method>exec</method><param>takethis()</param></mrl></oob>,_inmoovGestures.aiml
+0,READY,*,*,Ready.#Newline        <oob><mrl><service>python</service><method>exec</method><param>ready()</param></mrl></oob>,_inmoovGestures.aiml
+0,THAT WAS FUN,*,*,That was fun.#Newline        <oob><mrl><service>python</service><method>exec</method><param>thatwasfun()</param></mrl></oob>,_inmoovGestures.aiml
+0,FINGER RIGHT,*,*,Finger right.#Newline        <oob><mrl><service>python</service><method>exec</method><param>fingerright()</param></mrl></oob>,_inmoovGestures.aiml
+0,FINGER LEFT,*,*,Finger left.#Newline        <oob><mrl><service>python</service><method>exec</method><param>fingerleft()</param></mrl></oob>,_inmoovGestures.aiml
+0,COME HERE,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>comehere()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,APPROACH,*,*,APPROACH#Newline        <oob><mrl><service>python</service><method>exec</method><param>approach()</param></mrl></oob>,_inmoovGestures.aiml
+0,BRAKE,*,*,Shall I brake this.#Newline        <oob><mrl><service>python</service><method>exec</method><param>brake()</param></mrl></oob>,_inmoovGestures.aiml
+0,MADE BY,*,*,MADE BY#Newline        <oob><mrl><service>python</service><method>exec</method><param>madeby()</param></mrl></oob>,_inmoovGestures.aiml
+0,MADE BY IN FRENCH,*,*,Made by in french.#Newline        <oob><mrl><service>python</service><method>exec</method><param>madebyfrench()</param></mrl></oob>,_inmoovGestures.aiml
+0,PHONE HOME,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>phonehome()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,PLAY YOUR SONG,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>playsong()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,QUIT YOUR ACTION,*,*,Quitting my action.#Newline        <oob><mrl><service>python</service><method>exec</method><param>stopit()</param></mrl></oob>,_inmoovGestures.aiml
+0,CARRY THE BABY,*,*,Carry baby.#Newline        <oob><mrl><service>python</service><method>exec</method><param>carrybaby()</param></mrl></oob>,_inmoovGestures.aiml
+0,SYSTEM CHECK,*,*,System check.#Newline        <oob><mrl><service>python</service><method>exec</method><param>systemcheck()</param></mrl></oob>,_inmoovGestures.aiml
+0,DEMONSTRATE YOUR BALANCE,*,*,I will demonstrate my balance.#Newline        <oob><mrl><service>python</service><method>exec</method><param>balance()</param></mrl></oob>,_inmoovGestures.aiml
+0,WHAT ABOUT STAR WARS,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>whataboutstarwars()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,CAN YOU GIVE ME THE TIME,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>canyougivemethetime()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,ALESSANDRO,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>alessandro()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,NO WORRY,*,*,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>dontworry()</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,START FACE RECOGNIZER,*,*,I'm starting face recognizer<oob><mrl><service>python</service><method>exec</method><param>facerecognizer()</param></mrl></oob>,_inmoovGestures.aiml
+0,FACE RECOGNIZER,*,*,<srai>START FACE RECOGNIZER</srai>,_inmoovGestures.aiml
+0,FACE RECOGNITION,*,*,<srai>START FACE RECOGNIZER</srai>,_inmoovGestures.aiml
+0,STOP FACE RECOGNIZER,*,*,I'm stopping face recognizer<oob><mrl><service>python</service><method>exec</method><param>stopfacerecognizer()</param></mrl></oob>,_inmoovGestures.aiml
+0,STOP FACE RECOGNITION,*,*,<srai>STOP FACE RECOGNIZER</srai>,_inmoovGestures.aiml
+0,FACE RECOGNIZER STOP,*,*,<srai>STOP FACE RECOGNIZER</srai>,_inmoovGestures.aiml
+0,FREEZE FACE RECOGNIZER,*,*,<srai>STOP FACE RECOGNIZER</srai>,_inmoovGestures.aiml
+0,MAKE A SIGNATURE,*,*,Okay give the paper - I will do that for you <oob><mrl><service>python</service><method>exec</method><param>signature()</param></mrl></oob>,_inmoovGestures.aiml
+0,PLAY UTUBE,*,*,Okay <oob><mrl><service>python</service><method>exec</method><param>PlayUtub()</param></mrl></oob>,_inmoovGestures.aiml
+0,PLAY UTUB,*,*,Okay <oob><mrl><service>python</service><method>exec</method><param>PlayUtub()</param></mrl></oob>,_inmoovGestures.aiml
+0,PLAY YOU TUBE,*,*,<srai>PLAY UTUB</srai>,_inmoovGestures.aiml
+0,FIX THE MICROPHONE,*,*,Okay <oob><mrl><service>python</service><method>exec</method><param>WebkitSpeechRecognitionON()</param></mrl></oob>,_inmoovGestures.aiml
+0,ROBOT RESEARCH *,*,*,<random>#Newline          <li>Launching browser </li>#Newline          <li>Searching for you! </li>#Newline          <li>Looking on the net! </li>#Newline        </random>#Newline        <oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>BareBonesBrowserLaunch.openURL("https://encrypted.google.com/#q=<star/>")</param>#Newline          </mrl>#Newline        </oob>,_inmoovGestures.aiml
+0,ROBOTIC RESEARCH *,*,*,I will do that#Newline        <oob><mrl><service>python</service><method>exec</method><param>inmoovsearch("<star/>")</param></mrl></oob>,_inmoovGestures.aiml
+0,YOUTUBE *,*,*,Lets play#Newline        <oob><mrl><service>python</service><method>exec</method><param>BareBonesBrowserLaunch.openURL("https://www.youtube.com/results?search_query=<star/>")</param></mrl></oob>,_inmoovGestures.aiml
+0,RANDOM PAUSE,*,*,Thanks#Newline        <oob><mrl><service>python</service><method>exec</method><param>VieAleatoire()</param></mrl></oob>,_inmoovGestures.aiml
+0,RANDOM LIFE,*,*,<srai>RANDOM PAUSE</srai>,_inmoovGestures.aiml
+0,STOP RANDOM PAUSE,*,*,Okay#Newline        <oob><mrl><service>python</service><method>exec</method><param>VieAleatoireStop()</param></mrl></oob>,_inmoovGestures.aiml
+0,STOP RANDOM LIFE,*,*,<srai>STOP RANDOM PAUSE</srai>,_inmoovGestures.aiml
+0,ARE YOU ALRIGHT,*,*,<oob><mrl><service>python</service><method>exec</method><param>areyoualright()</param></mrl></oob>,_inmoovGestures.aiml
+0,YOU DID GREAT,*,*,<oob><mrl><service>python</service><method>exec</method><param>perfect()</param></mrl></oob>,_inmoovGestures.aiml
+0,SHOW YOUR BACK,*,*,You know I don't like to show my back because it is not finished#Newline        <oob><mrl><service>python</service><method>exec</method><param>passiveanswer()</param></mrl></oob>,_inmoovGestures.aiml
+0,NOT TRUE IT IS FINISHED,*,*,.#Newline        <oob><mrl><service>python</service><method>exec</method><param>notTrue()</param></mrl></oob>,_inmoovGestures.aiml
+0,IT'S AN OBJECT,*,*,Definition of an object#Comma anything that is visible or tangible and relatively stable in form.#Newline        <oob><mrl><service>python</service><method>exec</method><param>agreeanswersmall()</param></mrl></oob>,_inmoovGestures.aiml
+0,I KNOW BUT SHOW IT ANYWAY,*,*,<oob><mrl><service>python</service><method>exec</method><param>showitanyway()</param></mrl></oob>,_inmoovGestures.aiml
+0,SORRY I FORGOT,*,*,<oob><mrl><service>python</service><method>exec</method><param>sorryiforgot()</param></mrl></oob>,_inmoovGestures.aiml
+0,IT'S OKAY,*,*,Good.,_inmoovGestures.aiml
+0,NICE,*,*,<random>#Newline          <li>I know </li>#Newline          <li>yes#Comma indeed </li>#Newline          <li>you are damn right </li>#Newline        </random>,_inmoovGestures.aiml
+0,VERY GOOD THANK YOU,*,*,Okay#Comma good.,_inmoovGestures.aiml
+0,VERY GOOD,*,*,Thanks.,_inmoovGestures.aiml
+0,LOOK AT PEOPLE,*,*,<oob><mrl><service>python</service><method>exec</method><param>lookatpeople()</param></mrl></oob>,_inmoovGestures.aiml
+0,DO YOU LIKE TO EAT INDIAN FOOD,*,*,<oob><mrl><service>python</service><method>exec</method><param>eatindianfood()</param></mrl></oob>,_inmoovGestures.aiml
+0,DO YOU SPEAK INDI,*,*,<oob><mrl><service>python</service><method>exec</method><param>speakhindi()</param></mrl></oob>,_inmoovGestures.aiml
+0,WHAT DO YOU THINK ABOUT ARTIFICIAL INTELLIGENCE,*,*,I will always love you.#Newline        <oob><mrl><service>python</service><method>exec</method><param>iloveyou()</param></mrl></oob>,_inmoovGestures.aiml
+0,THIS GIRL LOOKS NICE,*,*,Sure she does.,_inmoovGestures.aiml
+0,THIS BOY LOOKS GOOD,*,*,He sure does#Comma very good indeed.,_inmoovGestures.aiml
+0,WHAT IS THIS COLOR,*,*,<oob><mrl><service>python</service><method>exec</method><param>whatisthecolor()</param></mrl></oob>,_inmoovGestures.aiml
+0,GUESS WHO IS HERE,*,*,<oob><mrl><service>python</service><method>exec</method><param>missedYou()</param></mrl></oob>,_inmoovGestures.aiml
+0,GUESS WHO'S HERE,*,*,<srai>GUESS WHO IS HERE</srai>,_inmoovGestures.aiml
+0,# YES #,# SHALL WE GIVE A HUG #,*,Great.#Newline      <oob>#Newline            <mrl>#Newline              <service>python</service>#Newline              <method>exec</method>#Newline              <param>missedYouYes()</param>#Newline            </mrl>#Newline       </oob>,_inmoovGestures.aiml
+0,# NO #,# SHALL WE GIVE A HUG #,*,As you please.#Newline      <oob>#Newline            <mrl>#Newline              <service>python</service>#Newline              <method>exec</method>#Newline              <param>missedYouNo()</param>#Newline            </mrl>#Newline       </oob>,_inmoovGestures.aiml
+0,PLEASE CHECK YOUR NECK,*,*,<oob><mrl><service>python</service><method>exec</method><param>rollHead()</param></mrl></oob>,_inmoovGestures.aiml
+0,CHECK YOUR NECK,*,*,<srai>PLEASE CHECK YOUR NECK</srai>,_inmoovGestures.aiml
+0,SHALL WE READ THE CAT BOOK,*,*,Sure it's a good idea.#Newline        <oob><mrl><service>python</service><method>exec</method><param>bookcat()</param></mrl></oob>,_inmoovGestures.aiml
+0,* THE CAT BOOK,*,*,<srai>SHALL WE READ THE CAT BOOK</srai>,_inmoovGestures.aiml
+0,# READ THE BOOK #,# TELL ME READ THE BOOK OR STOP READING #,*,Ok.#Newline      <oob>#Newline            <mrl>#Newline              <service>python</service>#Newline              <method>exec</method>#Newline              <param>bookcatYes()</param>#Newline            </mrl>#Newline       </oob>,_inmoovGestures.aiml
+0,# STOP READING #,# TELL ME READ THE BOOK OR STOP READING #,*,As you please.#Newline      <oob>#Newline            <mrl>#Newline              <service>python</service>#Newline              <method>exec</method>#Newline              <param>bookcatNo()</param>#Newline            </mrl>#Newline       </oob>,_inmoovGestures.aiml
+0,TURN THE PAGE,*,*,<random>#Newline          <li>Ok.</li>#Newline          <li>Sure.</li>#Newline          <li>Nice.</li>#Newline          <li>Right away.</li>#Newline          <li>I really love this book.</li>#Newline          <li>With pleasure.</li>#Newline          <li>Great images.</li>#Newline        </random>#Newline      <oob>#Newline            <mrl>#Newline              <service>python</service>#Newline              <method>exec</method>#Newline              <param>turnthepage()</param>#Newline            </mrl>#Newline       </oob>,_inmoovGestures.aiml
+0,* TURN THE PAGE *,*,*,<srai>TURN THE PAGE</srai>,_inmoovGestures.aiml
+0,POWER GLOVE,*,*,<oob><mrl><service>python</service><method>exec</method><param>powerglove()</param></mrl></oob>,_inmoovGestures.aiml
+0,* POWER GLOVE *,*,*,<srai>POWER GLOVE</srai>,_inmoovGestures.aiml
+0,WOULD YOU LIKE TO DANCE,*,*,<random>#Newline          <li>Come and join me</li>#Newline          <li>Please come and dance</li>#Newline          <li>Please come on the plateforme</li>#Newline          <li>Please step on the plateforme</li>#Newline          <li>Join me on the plateforme</li>#Newline          <li>Approach#Comma don't be shy</li>#Newline          <li>I am a robot dancer</li>#Newline          </random>#Newline      <oob><mrl><service>python</service><method>exec</method><param>welcomeToDance1()</param></mrl></oob>,_inmoovGestures.aiml
+0,DO YOU WANT TO DANCE,*,*,<srai>WOULD YOU LIKE TO DANCE</srai>,_inmoovGestures.aiml
+0,COME TO DANCE,*,*,<srai>WOULD YOU LIKE TO DANCE</srai>,_inmoovGestures.aiml
+0,* DANCE,*,*,<srai>WOULD YOU LIKE TO DANCE</srai>,_inmoovGestures.aiml
+0,# NO #,# SHALL WE DANCE #,*,As you please.#Newline        <oob>#Newline            <mrl>#Newline              <service>python</service>#Newline              <method>exec</method>#Newline              <param>danceNo()</param>#Newline            </mrl>#Newline         </oob>,_inmoovGestures.aiml
+0,# YES #,# SHALL WE DANCE #,*,<random>#Newline          <li>Don't you love that song</li>#Newline          <li>Nice</li>#Newline          <li>Lets get wild</li>#Newline          <li>Slow time</li>#Newline          </random>#Newline      <oob><mrl>#Newline              <service>python</service>#Newline              <method>exec</method>#Newline              <param>danceYes()</param>#Newline            </mrl>#Newline      </oob>,_inmoovGestures.aiml

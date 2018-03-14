@@ -1,0 +1,50 @@
+0,FIRST_INIT,*,*,<think>#Newline        <set name="firstinit">started</set>#Newline      </think>#Newline      <think>#Newline        <set name="topic">firstinit</set>#Newline      </think>#Newline		Hello#Comma This is my first initialisation. I need some informations#Comma I am listening#Comma what is my name ?,_inmoovChatbot.aiml
+0,#,# WHAT IS MY NAME #,FIRSTINIT,<set name="questionfirstinit">if my name is <star/> #Comma say yes or no</set>#Newline        <think>#Newline          <set name="tmpname">#Newline            <star/>#Newline          </set>#Newline        </think>,_inmoovChatbot.aiml
+0,#,# MAY I HAVE YOUR NAME #,FIRSTINIT,<set name="questionfirstinit">if your name is <star/> #Comma say yes or no</set>#Newline        <think>#Newline          <set name="tmpname">#Newline            <star/>#Newline          </set>#Newline        </think>,_inmoovChatbot.aiml
+0,# YES #,# IF MY NAME IS #,FIRSTINIT,<random>#Newline			<li>#Newline			I like this name #Comma <get name="tmpname"/>.#Newline			</li>#Newline			<li>#Newline			Very nice name#Comma <get name="tmpname"/> is great.#Newline			</li>#Newline        </random>#Newline	I need to know you#Comma I am listening#Comma may I have your name ?#Newline	<think><set name="botname"><get name="tmpname"/></set></think>,_inmoovChatbot.aiml
+0,# YES #,# IF YOUR NAME #,FIRSTINIT,<random>#Newline        <li>I am glad to know you#Comma <get name="tmpname"/>.</li>#Newline        <li>Nice to meet you#Comma <get name="tmpname"/>.</li>#Newline        </random>#Newline		#Newline        <think>#Newline          <set name="name">#Newline            <get name="tmpname"/>#Newline          </set>#Newline          <set name="firstinit">ok</set>#Newline          <set name="topic">default</set>#Newline        </think>#Newline        <oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>chatBot.setUsername(u"<get name="tmpname"/>")</param>#Newline          </mrl>#Newline        </oob>#Newline        <srai>WAKE_UP</srai>,_inmoovChatbot.aiml
+0,# NO #,# IF MY NAME IS #,FIRSTINIT,We restart.#Newline	I am listening. what is my name ?,_inmoovChatbot.aiml
+0,# NO #,# IF YOUR NAME #,FIRSTINIT,We restart.#Newline	I am listening. may I have your name ?,_inmoovChatbot.aiml
+0,#,# SAY YES OR NO #,FIRSTINIT,<random>#Newline          <li>#Newline	Please#Comma answer my question#Comma it is important#Newline	</li>#Newline          <li>#Newline	I repeat.#Newline	</li>#Newline        </random>#Newline        <get name="questionfirstinit"/>,_inmoovChatbot.aiml
+0,AUDIO TEST,*,*,<oob>#Newline         <mrl>#Newline          <service>AudioPlayer</service>#Newline          <method>play</method>#Newline          <param>InMoov\system\sounds\startupsound.mp3</param>#Newline         </mrl>#Newline       </oob>,_inmoovChatbot.aiml
+0,WAKE_UP,*,*,<li>#Newline        <srai>HI</srai>#Newline        <random>#Newline          <li>I am ready and listening.</li>#Newline          <li>What can I do for you.</li>#Newline          <li>How can I help you.</li>#Newline        </random>#Newline      </li>,_inmoovChatbot.aiml
+0,SYSTEM_SAY_HELLO,*,*,<srai>HI</srai>,_inmoovChatbot.aiml
+0,WAKE UP,*,*,<oob><mrl><service>python</service><method>exec</method><param>sleepModeWakeUp()</param></mrl></oob>,_inmoovChatbot.aiml
+0,SHUTDOWN,*,*,<oob><mrl><service>python</service><method>exec</method><param>shutdown()</param></mrl></oob>,_inmoovChatbot.aiml
+0,SHUT DOWN,*,*,<srai>SHUTDOWN</srai>,_inmoovChatbot.aiml
+0,GO TO SLEEP,*,*,<oob><mrl><service>python</service><method>exec</method><param>sleepModeSleep()</param></mrl></oob>,_inmoovChatbot.aiml
+0,DISABLE,*,*,<oob><mrl><service>python</service><method>exec</method><param>disable()</param></mrl></oob>,_inmoovChatbot.aiml
+0,WHAT IS THE TOPIC,*,*,The topic is#Newline      <get name="topic"/>,_inmoovChatbot.aiml
+0,BOOT UP MODE,*,*,Entering into the boot up topic.#Newline      <think><set name="topic">BOOTUP</set></think>,_inmoovChatbot.aiml
+0,GESTURES,*,*,Entering into the gestures topic.#Newline      <think><set name="topic">GESTURES</set></think>,_inmoovChatbot.aiml
+0,GESTURES *,*,*,<srai>GESTURES</srai>,_inmoovChatbot.aiml
+0,* GESTURES,*,*,<srai>GESTURES</srai>,_inmoovChatbot.aiml
+0,* GESTURES *,*,*,<srai>GESTURES</srai>,_inmoovChatbot.aiml
+0,DETACH ALL,*,*,Detach All#Newline      <oob><mrl><service>i01</service><method>disable</method></mrl></oob>,_inmoovChatbot.aiml
+0,DETACH EVERYTHING,*,*,<srai>DETACH ALL</srai>,_inmoovChatbot.aiml
+0,ATTACH ALL,*,*,Attaching all#Newline      <oob><mrl><service>i01</service><method>enable</method></mrl></oob>,_inmoovChatbot.aiml
+0,ATTACH EVERYTHING,*,*,<srai>ATTACH ALL</srai>,_inmoovChatbot.aiml
+0,ATTACH RIGHT HAND,*,*,Attaching my right hand#Newline      <oob><mrl><service>i01.rightHand</service><method>enable</method></mrl></oob>,_inmoovChatbot.aiml
+0,ATTACH YOUR RIGHT HAND,*,*,<srai>ATTACH RIGHT HAND</srai>,_inmoovChatbot.aiml
+0,DETACH RIGHT HAND,*,*,Detaching my right hand#Newline      <oob><mrl><service>i01.rightHand</service><method>disable</method></mrl></oob>,_inmoovChatbot.aiml
+0,DISCONNECT YOUR RIGHT HAND,*,*,<srai>DETACH RIGHT HAND</srai>,_inmoovChatbot.aiml
+0,ATTACH LEFT HAND,*,*,Attaching my left hand#Newline      <oob><mrl><service>i01.leftHand</service><method>enable</method></mrl></oob>,_inmoovChatbot.aiml
+0,ATTACH YOUR LEFT HAND,*,*,<srai>ATTACH LEFT HAND</srai>,_inmoovChatbot.aiml
+0,DETACH LEFT HAND,*,*,Detaching my left hand#Newline      <oob><mrl><service>i01.leftHand</service><method>disable</method></mrl></oob>,_inmoovChatbot.aiml
+0,DISCONNECT YOUR LEFT HAND,*,*,<srai>DETACH LEFT HAND</srai>,_inmoovChatbot.aiml
+0,ATTACH HEAD,*,*,Attaching my head#Newline      <oob><mrl><service>i01.head</service><method>enable</method></mrl></oob>,_inmoovChatbot.aiml
+0,ATTACH YOUR HEAD,*,*,<srai>ATTACH HEAD</srai>,_inmoovChatbot.aiml
+0,DETACH HEAD,*,*,Detaching my head#Newline      <oob><mrl><service>i01.head</service><method>disable</method></mrl></oob>,_inmoovChatbot.aiml
+0,DISCONNECT HEAD,*,*,<srai>DETACH HEAD</srai>,_inmoovChatbot.aiml
+0,ATTACH RIGHT ARM,*,*,Attaching my right arm#Newline      <oob><mrl><service>i01.rightArm</service><method>enable</method></mrl></oob>,_inmoovChatbot.aiml
+0,ATTACH YOUR RIGHT ARM,*,*,<srai>ATTACH RIGHT ARM</srai>,_inmoovChatbot.aiml
+0,DETACH RIGHT ARM,*,*,Detaching my right arm#Newline      <oob><mrl><service>i01.rightArm</service><method>disable</method></mrl></oob>,_inmoovChatbot.aiml
+0,DISCONNECT RIGHT ARM,*,*,<srai>DETACH RIGHT ARM</srai>,_inmoovChatbot.aiml
+0,ATTACH LEFT ARM,*,*,Attaching my left arm#Newline      <oob><mrl><service>i01.leftArm</service><method>enable</method></mrl></oob>,_inmoovChatbot.aiml
+0,ATTACH YOUR LEFT ARM,*,*,<srai>ATTACH LEFT ARM</srai>,_inmoovChatbot.aiml
+0,DETACH LEFT ARM,*,*,Detaching my left arm#Newline      <oob><mrl><service>i01.leftArm</service><method>disable</method></mrl></oob>,_inmoovChatbot.aiml
+0,DISCONNECT LEFT ARM,*,*,<srai>DETACH LEFT ARM</srai>,_inmoovChatbot.aiml
+0,ATTACH TORSO,*,*,Attaching my torso#Newline      <oob><mrl><service>i01.torso</service><method>enable</method></mrl></oob>,_inmoovChatbot.aiml
+0,ATTACH YOUR TORSO,*,*,<srai>ATTACH TORSO</srai>,_inmoovChatbot.aiml
+0,DETACH TORSO,*,*,Detaching my torso#Newline      <oob><mrl><service>i01.torso</service><method>disable</method></mrl></oob>,_inmoovChatbot.aiml
+0,DISCONNECT TORSO,*,*,<srai>DETACH TORSO</srai>,_inmoovChatbot.aiml

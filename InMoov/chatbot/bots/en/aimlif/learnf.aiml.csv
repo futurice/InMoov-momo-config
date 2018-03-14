@@ -1,0 +1,72 @@
+0,A TEA,*,*,I AM GETTING your tea ready sir.,learnf.aiml
+0,A COFFEE,*,*,I AM GETTING your coffee ready sir.,learnf.aiml
+0,A COCA COLA,*,*,I will look in the fridge if there is some available.,learnf.aiml
+0,A BEER,*,*,I will see if I can find a fresh beer.,learnf.aiml
+0,COFFEE,*,*,I AM GETTING your coffee ready sir.,learnf.aiml
+0,I WANT A TEA,*,*,hot or cold your tea.,learnf.aiml
+0,I WANT A COFFEE,*,*,hot or cold.,learnf.aiml
+0,I WOULD LIKE A HOT DRINK,*,*,tea or coffee.,learnf.aiml
+0,I WOULD LIKE A FRESH DRINK,*,*,A beer perhaps or a coca cola.,learnf.aiml
+0,IS THE WORKSHOP A PLACE TO WORK,*,*,Yes.,learnf.aiml
+0,IS THE THIRD LAW OF ROBOTICS A ROBOT MAY NOT HARM A HUMAN BEING UNLESS YOU FIND A WAY TO PROVE THAT ULTIMATELY THE HARM DONE WOULD BENEFIT HUMANITY IN GENERAL,*,*,Yes.,learnf.aiml
+0,IS THE SECOND LAW OF ROBOTICS A ROBOT MAY NOT HARM HUMANITY OR BY INACTION ALLOW HUMANITY TO COME TO HARM,*,*,Yes.,learnf.aiml
+0,IS THE FIRST LAW OF ROBOTIC A ROBOT MAY NOT HARM A HUMAN BEING,*,*,Yes.,learnf.aiml
+0,IS FOOTBALL A FLAT OBJECT UNLESS IT IS A PICTURE,*,*,No.,learnf.aiml
+0,IS A WORKSHOP A PLACE TO WORK,*,*,Yes.,learnf.aiml
+0,IS A HAND A HUMAN BODY PART WITH FIVE FINGERS,*,*,Yes.,learnf.aiml
+0,IS OCTOBER 9TH THE BIRTHDAY OF MY KIND,*,*,Yes.,learnf.aiml
+0,IS BOTTLE OF CHAMPAGNE GOOD FOR ME TO DRINK,*,*,No.,learnf.aiml
+0,IS THIS THE RIGHT ANSWER,*,*,No.,learnf.aiml
+0,IS THIS A ROBOT LAW HARM HUMANITY OR BY INACTION ALLOW HUMANITY TO COME TO HARM,*,*,Yes.,learnf.aiml
+0,IS SHOE AN,*,*,Yes.,learnf.aiml
+0,IS PARIS A NICE CITY,*,*,Yes.,learnf.aiml
+0,IS FRANCE A COUNTRY IN EUROPE,*,*,Yes.,learnf.aiml
+0,WHAT IS A WORKSHOP,*,*,A place to work.,learnf.aiml
+0,WHAT IS A ROBOT MAY NOT HARM A HUMAN BEING UNLESS YOU FIND A WAY TO PROVE THAT ULTIMATELY THE HARM DONE WOULD BENEFIT HUMANITY IN GENERAL,*,*,the third law of robotics.,learnf.aiml
+0,WHAT IS A ROBOT MAY NOT HARM A HUMAN BEING,*,*,the first law of robotic.,learnf.aiml
+0,WHAT IS A ROBOT MAY NOT HARM HUMANITY OR BY INACTION ALLOW HUMANITY TO COME TO HARM,*,*,this.,learnf.aiml
+0,WHAT IS A HUMAN BODY PART WITH FIVE FINGERS,*,*,a hand.,learnf.aiml
+0,WHAT IS A NICE CITY,*,*,Paris.,learnf.aiml
+0,WHAT IS A PLACE TO WORK,*,*,the workshop.,learnf.aiml
+0,WHAT IS A HAND,*,*,A human body part with five fingers.,learnf.aiml
+0,WHAT IS FOOTBALL,*,*,a flat object unless it is a picture.,learnf.aiml
+0,WHAT IS LAW ONE#COMMA A ROBOT MAY NOT HARM A HUMAN BEING#COMMA SECOND LAW#COMMA A ROBOT MAY NOT HARM HUMANITY OR BY INACTION ALLOW HUMANITY TO COME TO HARM#COMMA THIRD LAW#COMMA A ROBOT MAY NOT HARM A HUMAN BEING UNLESS YOU FIND A WAY TO PROVE THAT ULTIMATELY THE HARM DONE WOULD BENEFIT HUMANITY IN GENERAL,*,*,the three laws of robotics.,learnf.aiml
+0,WHAT IS IN PARIS,*,*,Your workshop,learnf.aiml
+0,WHAT IS OCTOBER 9TH,*,*,The birthday of my kind.,learnf.aiml
+0,WHAT IS BOTTLE OF CHAMPAGNE,*,*,good for me to drink.,learnf.aiml
+0,WHAT IS MY WORKSHOP,*,*,in Paris,learnf.aiml
+0,WHAT IS SHOE,*,*,An object that you put on your legs on your foot.,learnf.aiml
+0,WHAT IS PARIS,*,*,A nice city.,learnf.aiml
+0,WHAT IS AN OBJECT THAT YOU PUT ON YOUR LEGS ON YOUR FOOT,*,*,shoe.,learnf.aiml
+0,WHAT IS FRANCE,*,*,A country in Europe.,learnf.aiml
+0,WHAT IS THE WORKSHOP,*,*,A place to work.,learnf.aiml
+0,WHAT IS THE CREATOR OF IN MOVE ROBOTS,*,*,Gael langevin.,learnf.aiml
+0,WHAT IS THE THIRD LAW OF ROBOTICS,*,*,A robot may not harm a human being unless you find a way to prove that ultimately the harm done would benefit humanity in general.,learnf.aiml
+0,WHAT IS THE SECOND LAW OF ROBOTICS,*,*,A robot may not harm humanity or by inaction allow humanity to come to harm.,learnf.aiml
+0,WHAT IS THE FIRST LAW OF ROBOTIC,*,*,A robot may not harm a human being.,learnf.aiml
+0,WHAT IS THE THREE LAWS OF ROBOTICS,*,*,Law one#Comma a robot may not harm a human being#Comma Second law#Comma A robot may not harm humanity or by inaction allow humanity to come to harm#Comma Third law#Comma a robot may not harm a human being unless you find a way to prove that ultimately the harm done would benefit humanity in general.,learnf.aiml
+0,WHAT IS THE NAME OF MY DAUGHTER S BOYFRIEND,*,*,maximilien.,learnf.aiml
+0,WHO IS MAXIMILIEN,*,*,your daughter's boyfriend.,learnf.aiml
+0,WHAT IS NOT THE RIGHT ANSWER,*,*,this.,learnf.aiml
+0,WHAT IS NOT A FLAT OBJECT UNLESS IT IS A PICTURE,*,*,football.,learnf.aiml
+0,WHAT IS NOT GOOD FOR ME TO DRINK,*,*,bottle of champagne.,learnf.aiml
+0,MY DAUGHTER S BOYFRIEND S NAME,*,*,maximilien,learnf.aiml
+0,MY RABBIT S NAME,*,*,Leo,learnf.aiml
+0,MY PET S NAME,*,*,doodoo,learnf.aiml
+0,HOT,*,*,hot is memorized.,learnf.aiml
+0,BEER,*,*,I will see if I can find a fresh beer.,learnf.aiml
+0,GIVE ME A TEA,*,*,immediately sir.,learnf.aiml
+0,GIVE ME A COFFEE,*,*,immediately sir.,learnf.aiml
+0,GIVE ME A COCA COLA,*,*,I will seek for a coca cola now.,learnf.aiml
+0,GIVE ME A COKE,*,*,I will seek for a coke now.,learnf.aiml
+0,GIVE ME A BEER,*,*,I will seek for a beer.,learnf.aiml
+0,TEA,*,*,I AM GETTING your tea ready sir.,learnf.aiml
+0,HOW MANY EYES DOES A DOG HAVE,*,*,A dog has two eyes.,learnf.aiml
+0,HOW MANY HEADS DOES A CAT HAVE,*,*,A cat has one head.,learnf.aiml
+0,HOW MANY HEADS DOES A DOG HAVE,*,*,A dog has one head.,learnf.aiml
+0,COCA COLA PLEASE,*,*,I will search for it immediately.,learnf.aiml
+0,COCA COLA,*,*,I will look in the fridge if there is some available.,learnf.aiml
+0,COLD,*,*,cold is memorized.,learnf.aiml
+0,WHO IS THE BIRTHDAY OF MY KIND,*,*,october 9th.,learnf.aiml
+0,WHO IS GAEL LANGEVIN,*,*,Gael Langevin is my creator.,learnf.aiml
+0,WHO IS A COUNTRY IN EUROPE,*,*,france.,learnf.aiml

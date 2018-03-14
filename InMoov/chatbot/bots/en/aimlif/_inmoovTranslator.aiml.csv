@@ -1,0 +1,9 @@
+0,TRANSLATION IN *,*,*,<think>#Newline        <set name="topic">TRANSLATOR</set>#Newline      </think>#Newline      <think>#Newline        <set name="languetraduction">#Newline          <star/>#Newline        </set>#Newline      </think>#Newline      <li>#Newline        Translating in <star/>#Comma tell me : stop translate#Comma and I will stop#Newline      </li>,_inmoovTranslator.aiml
+0,TRANSLATION TO *,*,*,<srai>TRANSLATION IN <star index="1"/></srai>,_inmoovTranslator.aiml
+0,TRANSLATE * IN *,*,*,<oob>#Newline        <mrl>#Newline          <service>python</service>#Newline          <method>exec</method>#Newline          <param>translateText("<star index="1"/>"#Comma"<star index="2"/>")</param>#Newline        </mrl>#Newline      </oob>,_inmoovTranslator.aiml
+0,TRANSLATE * TO *,*,*,<srai>TRANSLATE <star index="1"/> IN <star index="2"/></srai>,_inmoovTranslator.aiml
+0,AZURE_ERROR_1,*,*,Sorry there is a probleme of communication with the azure server#Comma try again and check the key !,_inmoovTranslator.aiml
+0,AZURE_ERROR_2 *,*,*,I don't know this language <star index="1"/>#Comma or the syntax in the azure file is incorrect !,_inmoovTranslator.aiml
+0,AZURE_ERROR_3,*,*,I seem to have trouble connecting myself to the server .,_inmoovTranslator.aiml
+0,# STOP TRANSLATE #,*,TRANSLATOR,<think>#Newline        <set name="topic">GESTURES</set>#Newline      </think>#Newline      <think>#Newline        <set name="languetraduction">en</set>#Newline      </think>#Newline      <li>Okay#Comma I will stop translating#Comma it was nice speaking that language</li>,_inmoovTranslator.aiml
+0,#,*,TRANSLATOR,<oob>#Newline          <mrl>#Newline            <service>python</service>#Newline            <method>exec</method>#Newline            <param>translateText("<star index="1"/>"#Comma"<get name="languetraduction"/>")</param>#Newline          </mrl>#Newline        </oob>,_inmoovTranslator.aiml
