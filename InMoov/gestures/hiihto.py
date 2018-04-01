@@ -9,8 +9,11 @@ def hiihto():
 
   fullspeed()
 
-  i01.moveHand("left",180,180,180,180,180)
-  i01.moveHand("right",180,180,180,180,180)
+  i01.moveHand("left",180,180,180,180,180,90)
+  i01.moveHand("right",180,180,180,180,180,90)
+  
+  print commands.getoutput('/bin/echo "900,900,900,900,900" | /usr/bin/nc localhost 10000')  
+  print commands.getoutput('/bin/echo "900,900,900,900,900" | /usr/bin/nc localhost 10001')  
 
   sleep(2)
 
@@ -39,7 +42,10 @@ def hiihto():
 
   sleep(2)
 
-  i01.moveHand("left",0,0,0,0,0)
-  i01.moveHand("right",0,0,0,0,0)
+#  i01.moveHand("left",0,0,0,0,0)
+#  i01.moveHand("right",0,0,0,0,0)
+
+  print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10000')
+  print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10001')
 
   i01.finishedGesture()

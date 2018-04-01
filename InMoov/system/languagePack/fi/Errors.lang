@@ -1,6 +1,6 @@
 # -- coding: utf-8 --
 pitch="[[pbas -7]] "
-lang_alert=pitch+"Hei "
+lang_alert=pitch+""
 lang_BadMrlcommVersion=pitch+"Arduinon M R L versio on väärä, se pitäisi päivittää "
 lang_ArduinoNotConnected=pitch+"Ongelma kommunikaatioportin kanssa, tarkista Arduino "
 lang_VoiceDownloaded=pitch+"Olen ladannut uuden äänen. Sammutan itseni, uudelleenkäynnistäisitkö minut pian? "
@@ -17,4 +17,4 @@ lang_OpenNiNoWorky=pitch+"Kinekt oupen N I ei voi käynnistyä, tarkista Mikroso
 lang_NeopixelNoWorky=pitch+"Ongelma neopikselin kanssa, tarkista yhteys ja M R L protokolla "
 lang_VoiceRssNoWorky=pitch+"Ongelma puhepalvelun kanssa, mahdollisesti API avain ongelma, tarkista asetukset "
 lang_VinmooovNoWorky=pitch+"Virtuaalinen InMoov ei käynnisty, joko J M 3 hakemisto puuttuu, tai Java ei ole 64-bittinen "
-lang_BadShutdown=pitch+"A I M L tiedostot "
+lang_BadShutdown=pitch+"Saan virtaa. Käynnistyn."

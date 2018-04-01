@@ -6,5 +6,5 @@ lang_MouthSyncronisationBad=pitch+"En havaitse audiosignaalia analogisessa porti
 lang_MouthSyncronisationNotPerfect=pitch+"Havaitsen heikon audiosignaalin analogisessa portissa "
 lang_MouthSyncronisationOk=pitch+"Suun synkronisaatio toiminnassa "
 lang_newMRL=pitch+"M R L jarri on päivitetty, joudun asentamaan itseni uudelleen. Sammutan itseni, käynnistä minut kohta "
-lang_shutDown=pitch+"Sammutan itseni noin kymmenessä sekunnissa "
+lang_shutDown=pitch+"Sammutan itseni "
 lang_noSkeleton=pitch+"Käytössä yksi tai useampi Arduino, mutta ruumiinosia ei ole aktivoitu "

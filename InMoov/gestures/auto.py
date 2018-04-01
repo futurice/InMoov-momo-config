@@ -1,36 +1,30 @@
 def auto():
   i01.startedGesture()
 
-# i01.setHandSpeed("left", 0.75, 0.75, 0.75, 0.75, 0.75, 0.75)
-# i01.setHandSpeed("left", 0.75, 0.75, 0.75, 0.75, 0.75, 0.75)
-
-# i01.setArmSpeed("left", 0.75, 0.75, 0.75, 0.75)
-# i01.setArmSpeed("right", 0.75, 0.75, 0.75, 0.75)
-
   fullspeed()
 
-  i01.moveHand("left",180,180,180,180,180)
-  i01.moveHand("right",180,180,180,180,180)
+  print commands.getoutput('/bin/echo "900,900,900,900,900" | /usr/bin/nc localhost 10000')
+  print commands.getoutput('/bin/echo "900,900,900,900,900" | /usr/bin/nc localhost 10001')
 
   sleep(2)
 
-  i01.moveArm("left", 180, 80, 110, 25)
-  i01.moveArm("right", 180, 110, 60, 25)
+  i01.moveArm("left", 180, 60, 120, 25)
+  i01.moveArm("right", 180, 130, 50, 25)
 
-  sleep(3)
+  sleep(2)
 
-  i01.moveArm("left", 180, 110, 60, 25)
-  i01.moveArm("right", 180, 80, 110, 25)
+  i01.moveArm("left", 180, 130, 50, 25)
+  i01.moveArm("right", 180, 60, 120, 25)
 
-  sleep(1)
+  sleep(2)
 
-  i01.moveArm("left", 180, 80, 110, 25)
-  i01.moveArm("right", 180, 110, 60, 25)
+  i01.moveArm("left", 180, 60, 120, 25)
+  i01.moveArm("right", 180, 130, 50, 25)
 
-  sleep(1)
+  sleep(2)
 
-  i01.moveArm("left", 180, 110, 60, 25)
-  i01.moveArm("right", 180, 80, 110, 25)
+  i01.moveArm("left", 180, 130, 50, 25)
+  i01.moveArm("right", 180, 60, 120, 25)
 
   sleep(1)
 
@@ -39,7 +33,7 @@ def auto():
 
   sleep(3)
 
-  i01.moveHand("left",0,0,0,0,0)
-  i01.moveHand("right",0,0,0,0,0)
+  print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10000')
+  print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10001')
 
   i01.finishedGesture()
