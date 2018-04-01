@@ -1,0 +1,104 @@
+sleep(5)
+
+# slow down some movements 
+i01.head.jaw.setVelocity(100)
+i01.head.rothead.setVelocity(50)
+i01.head.neck.setVelocity(50)
+
+# look straight ahead
+i01.head.rothead.moveTo(90)
+i01.head.neck.moveTo(100)
+sleep(3)
+
+# open mouth
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Hei,[[slnc 300]] olen Momo.")
+sleep(2)
+talk("[[rate 150; pbas -8]]Olen robot[[slnc 100]]ti.")
+sleep(2)
+# close mouth
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+# look at therapist and the child
+i01.setHeadVelocity(40, 40, 40)
+i01.head.rothead.moveTo(120)
+sleep(3)
+i01.head.rothead.moveTo(60)
+sleep(3)
+
+
+# wave arm to say hello
+i01.moveArm("right", 180, 90, 105, 25)
+sleep(2)
+i01.moveArm("right", 0, 90, 0, 0)
+sleep(2)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Mikä sinun nimesi on?")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(4)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Hei[[slnc 100]]Teemu")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Tehdään yhdessä tehtäviä")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(4)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Katso[[slnc 100]]mitä minä teen.")
+sleep(2)
+talk("[[rate 150; pbas -10]]Tee [[pbas -8]][[slnc 100]]sama perässä.")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Minä hiihdän")
+sleep(1)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+hiihto()
+sleep(2)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Nyt on sinun vuorosi.")
+sleep(2)
+talk("[[rate 150; pbas -10]]Tee [[pbas -8]][[slnc 50]]samoin.")
+sleep(1)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+# thumbs up here
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Hyvä![[slnc 200]] Oikein meni.")
+sleep(1)
+i01.head.jaw.moveTo(0)
+
+sleep(5)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Kokeillaan seuraavaa viittomaa.")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Minä ajan autoa")
+sleep(1)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+auto()
+sleep(2)
+
