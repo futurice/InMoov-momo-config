@@ -14,7 +14,7 @@ sleep(3)
 i01.head.jaw.moveTo(120)
 talk("[[rate 150; pbas -8]]Hei,[[slnc 300]] olen Momo.")
 sleep(2)
-talk("[[rate 150; pbas -8]]Olen robot[[slnc 100]]ti.")
+talk("[[rate 150; pbas -8]]Olen ropotti.")
 sleep(2)
 # close mouth
 i01.head.jaw.moveTo(0)
@@ -75,9 +75,14 @@ sleep(2)
 talk("[[rate 150; pbas -10]]Tee [[pbas -8]][[slnc 50]]samoin.")
 sleep(1)
 i01.head.jaw.moveTo(0)
-sleep(3)
+sleep(10)
 
-# thumbs up here
+# kid will do the sign, hopefully
+
+# success! thumbs up, it takes about 4 seconds, so let’s talk on top of it
+peukku()
+
+sleep(4)
 
 i01.head.jaw.moveTo(120)
 talk("[[rate 150; pbas -8]]Hyvä![[slnc 200]] Oikein meni.")
