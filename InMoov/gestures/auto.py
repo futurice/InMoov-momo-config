@@ -3,54 +3,57 @@ def auto():
 
   fullspeed()
 
-  print commands.getoutput('/bin/echo "900,900,900,900,900" | /usr/bin/nc localhost 10000')
-  print commands.getoutput('/bin/echo "900,900,900,900,900" | /usr/bin/nc localhost 10001')
+  print commands.getoutput('/bin/echo "1000,1000,1000,1000,1000" | /usr/bin/nc localhost 10000')
+  print commands.getoutput('/bin/echo "1000,1000,1000,1000,1000" | /usr/bin/nc localhost 10001')
 
   sleep(1)
 
-  i01.moveArm("right", 180, 95, 85, 0)
-  i01.moveArm("left", 180, 95, 85, 0)
+  i01.moveArm("right", 80, 85, 135, 90)
+  i01.moveArm("left", 80, 70, 120, 97)
 
-  sleep(2)
+  sleep(4)
 
-  i01.moveArm("left", 120, 80, 100, 0)
-  i01.moveArm("right", 130, 110, 70, 0)
+  i01.moveArm("right", 100, 85, 135, 90)
+  i01.moveHand("right", 0, 0, 0, 0, 0, 142)
+
+  i01.moveArm("left", 60, 70, 120, 97)
+  i01.moveHand("left", 0, 0, 0, 0, 0, 65)
+
+  sleep(1.5)
+
+  i01.moveArm("right", 60, 85, 135, 0)
+  i01.moveHand("right", 0, 0, 0, 0, 0, 149)
+
+  i01.moveArm("left", 100, 70, 120, 0)
   i01.moveHand("left", 0, 0, 0, 0, 0, 75)
-  i01.moveHand("right", 0, 0, 0, 0, 0, 152)
+
+  sleep(1.5)
+
     
-  sleep(2)
-
-  i01.moveArm("left", 80, 110, 70, 0)
-  i01.moveArm("right", 180, 80, 100, 0)
-  i01.moveHand("left", 0, 0, 0, 0, 0, 65)
+  i01.moveArm("right", 100, 85, 135, 90)
   i01.moveHand("right", 0, 0, 0, 0, 0, 142)
 
-  sleep(2)
+  i01.moveArm("left", 60, 70, 120, 97)
+  i01.moveHand("left", 0, 0, 0, 0, 0, 65)
 
-  i01.moveArm("left", 120, 80, 100, 0)
-  i01.moveArm("right", 130, 110, 70, 0)
+
+  sleep(1.5)
+
+  i01.moveArm("right", 60, 85, 135, 0)
+  i01.moveHand("right", 0, 0, 0, 0, 0, 149)
+
+  i01.moveArm("left", 100, 70, 120, 0)
   i01.moveHand("left", 0, 0, 0, 0, 0, 75)
-  i01.moveHand("right", 0, 0, 0, 0, 0, 152)
 
-  sleep(2)
-
-  i01.moveArm("left", 80, 110, 70, 0)
-  i01.moveArm("right", 180, 80, 100, 0)
-  i01.moveHand("left", 0, 0, 0, 0, 0, 65)
-  i01.moveHand("right", 0, 0, 0, 0, 0, 142)
-
-
-  sleep(1)
+  sleep(1.5)
 
   # rest
-  
-  i01.moveArm("left", 0, 90, 0, 0)
-  i01.moveArm("right", 0, 90, 0, 0)
 
-  i01.moveHand("left", 0, 0, 0, 0, 0, 70)
-  i01.moveHand("right", 0, 0, 0, 0, 0, 147)
+  i01.moveArm("left", 8, 90, 90, 90)
+  i01.moveArm("right", 20, 90, 90, 97)
 
-  sleep(2)
+  i01.moveHand("right",180,180,180,180,180,147)
+  i01.moveHand("left",180,180,180,180,180,70)
 
   print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10000')
   print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10001')
