@@ -2,12 +2,12 @@ def juna():
   i01.startedGesture()
 
   fullspeed()
-  
+
   # make a fist
   print commands.getoutput('/bin/echo "900,900,900,900,900" | /usr/bin/nc localhost 10000')
 
   # palm up (only the last digit matters)
-  i01.moveHand("right",180,180,180,180,180,165)
+  i01.moveHand("right",180,180,180,180,180,160)
 
   # arm up
   i01.moveArm("right", 180, 80, 100, 0)
@@ -36,11 +36,7 @@ def juna():
 
   #rest
   i01.moveArm("right", 0, 90, 0, 0)
-  i01.moveHand("right",180,180,180,180,180,90)
-
-  sleep(2)
-
+  i01.moveHand("right",180,180,180,180,180,147)
   print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10000')
 
   i01.finishedGesture()
-

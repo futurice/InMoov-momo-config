@@ -11,29 +11,29 @@ def kattila():
 
   # palms a bit up
 
-  i01.moveHand("right",180,180,180,180,180,160)
-  i01.moveHand("left",180,180,180,180,180,30)
+  i01.moveHand("right",180,180,180,180,180,155)
+  i01.moveHand("left",180,180,180,180,180,62)
 
-  # arms up 
+  # arms up
 
-  i01.moveArm("left", 150, 90, 100, 0)
+  i01.moveArm("left", 95, 90, 100, 0)
   i01.moveArm("right", 180, 85, 100, 0)
 
   sleep(5)
 
-  # do the shake 
+  # do the shake
 
-  i01.moveArm("left", 110, 90, 100, 0)
+  i01.moveArm("left", 65, 90, 100, 0)
   i01.moveArm("right", 130, 85, 100, 0)
 
   sleep(1)
 
-  i01.moveArm("left", 150, 90, 100, 0)
+  i01.moveArm("left", 95, 90, 100, 0)
   i01.moveArm("right", 180, 85, 100, 0)
 
   sleep(1)
 
-  i01.moveArm("left", 110, 90, 100, 0)
+  i01.moveArm("left", 65, 90, 100, 0)
   i01.moveArm("right", 130, 85, 100, 0)
 
   sleep(1)
@@ -46,9 +46,9 @@ def kattila():
   print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10000')
   print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10001')
 
-  i01.moveHand("right",180,180,180,180,180,90)
-  i01.moveHand("left",180,180,180,180,180,90)
-  
+  i01.moveHand("right",180,180,180,180,180,147)
+  i01.moveHand("left",180,180,180,180,180,70)
+
   sleep(2)
 
   i01.finishedGesture()
