@@ -13,27 +13,31 @@ def talo():
   # bring arms together in front of face
 
   i01.moveHand("right",180,180,180,180,180,143)
-  i01.moveHand("left",180,180,180,180,180,70)
+  i01.moveHand("left",180,180,180,180,180,72)
 
   i01.moveArm("right", 100, 84, 168, 100)
   sleep(1)
-  i01.moveArm("left", 90, 65, 155, 90)
+  i01.moveArm("left", 90, 65, 157, 90)
 
-  sleep(5)
+  sleep(6)
+
+  i01.moveHand("right",180,180,180,180,180,149)
+  i01.moveHand("left",180,180,180,180,180,68)
 
   # take them apart a notch
 
-  i01.moveArm("left", 90, 81, 155, 90)
-  i01.moveArm("right", 100, 105, 164, 100)
 
-  sleep(3)
+  i01.moveArm("right", 85, 108, 155, 100)
+  i01.moveArm("left", 75, 89, 145, 90)
+
+  sleep(2)
 
   # bring them down
 
-  i01.moveArm("left", 90, 84, 125, 0)
-  i01.moveArm("right", 100, 102, 130, 0)
+  i01.moveArm("right", 85, 102, 100, 0)
+  i01.moveArm("left", 75, 84, 95, 0)
 
-  sleep(3)
+  sleep(4)
 
   # rest
 
