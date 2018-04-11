@@ -30,6 +30,7 @@ setspeed()
 
 #twistpeukku()
 #momotalk("Hyvä![[slnc 200]] Oikein meni.")
+#jingle() NOT IMPLEMENTED
 #momotalk("Kokeillaan seuraavaa viittomaa.")
 
 ### FAILURE
