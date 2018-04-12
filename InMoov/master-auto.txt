@@ -1,0 +1,210 @@
+sleep(5)
+
+#set limbs to full speed
+fullspeed()
+
+#set head to slower speed
+setspeed()
+
+lookahead()
+  
+sleep(3)
+
+# open mouth
+i01.head.jaw.moveTo(90)
+talk("[[rate 150; pbas -8]]Hei,[[slnc 300]] olen Momo.")
+sleep(2)
+talk("[[rate 150; pbas -8]]Olen ropotti.")
+sleep(1.5)
+# close mouth
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+# look at therapist and the child
+lookleftandright()
+
+sleep(3)
+
+# wave arm to say hello
+wavehello()
+
+sleep(2)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Mikä sinun nimesi on?")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(4)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Hei[[slnc 100]]Teemu")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Tehdään yhdessä tehtäviä")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(4)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Katso[[slnc 100]]mitä minä teen.")
+sleep(2)
+talk("[[rate 150; pbas -10]]Tee [[pbas -8]][[slnc 100]]sama perässä.")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Minä hiihdän")
+sleep(1)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+hiihto()
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Nyt on sinun vuorosi.")
+sleep(2)
+talk("[[rate 150; pbas -10]]Tee [[pbas -8]][[slnc 50]]samoin.")
+sleep(1)
+i01.head.jaw.moveTo(0)
+sleep(10)
+
+# kid will do the sign, hopefully
+
+# success! thumbs up, it takes about 4 seconds, so let’s talk on top of it
+
+twistpeukku()
+
+sleep(4)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Hyvä![[slnc 200]] Oikein meni.")
+sleep(1)
+i01.head.jaw.moveTo(0)
+
+sleep(5)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Kokeillaan seuraavaa viittomaa.")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Minä ajan autoa")
+sleep(1)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+auto()
+
+sleep(2)
+
+lookahead()
+
+
+#set limbs to full speed
+fullspeed()
+
+#set head to slower speed
+setspeed()
+
+lookahead()
+  
+sleep(3)
+
+# open mouth
+i01.head.jaw.moveTo(90)
+talk("[[rate 150; pbas -8]]Hei,[[slnc 300]] olen Momo.")
+sleep(2)
+talk("[[rate 150; pbas -8]]Olen ropotti.")
+sleep(2)
+# close mouth
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+# look at therapist and the child
+lookleftandright()
+
+sleep(3)
+
+# wave arm to say hello
+wavehello()
+
+sleep(2)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Mikä sinun nimesi on?")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(4)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Hei[[slnc 100]]Teemu")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Tehdään yhdessä tehtäviä")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(4)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Katso[[slnc 100]]mitä minä teen.")
+sleep(2)
+talk("[[rate 150; pbas -10]]Tee [[pbas -8]][[slnc 100]]sama perässä.")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Minä hiihdän")
+sleep(1)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+hiihto()
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Nyt on sinun vuorosi.")
+sleep(2)
+talk("[[rate 150; pbas -10]]Tee [[pbas -8]][[slnc 50]]samoin.")
+sleep(1)
+i01.head.jaw.moveTo(0)
+sleep(10)
+
+# kid will do the sign, hopefully
+
+# success! thumbs up, it takes about 4 seconds, so let’s talk on top of it
+peukku()
+
+sleep(4)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Hyvä![[slnc 200]] Oikein meni.")
+sleep(1)
+i01.head.jaw.moveTo(0)
+
+sleep(5)
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Kokeillaan seuraavaa viittomaa.")
+sleep(2)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+
+i01.head.jaw.moveTo(120)
+talk("[[rate 150; pbas -8]]Minä ajan autoa")
+sleep(1)
+i01.head.jaw.moveTo(0)
+sleep(3)
+
+auto()
+sleep(2)

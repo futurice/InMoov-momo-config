@@ -1,0 +1,61 @@
+# INTRODUCTION FLOW
+
+fullspeed()
+setspeed()
+
+#lookahead()
+
+#momotalk("Hei,[[slnc 300]] olen Momo.")
+#momotalk("Olen ropotti.")
+
+#lookleftandright()
+#wavehello()
+
+#momotalk("Mikä sinun nimesi on?")
+#momotalk("Hei[[slnc 100]]") # <---- ADD NAME HERE IF YOU CATCH IT
+#momotalk("Tehdään yhdessä tehtäviä")
+#momotalk("Katso[[slnc 100]]mitä minä teen.")
+#momotalk("Tee [[slnc 100]]sama perässä.")
+
+## KATTILA FLOW
+
+#momotalk("Kattila")
+
+#kattila()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### SUCCESS
+
+#twistpeukku()
+#momotalk("Hyvä![[slnc 200]] Oikein meni.")
+#momotalk("Kokeillaan seuraavaa viittomaa.")
+#jingle() 
+
+### FAILURE
+
+#momotalk("Hyvä yritys! Ei mennyt ihan oikein.")
+#momotalk("Kokeillaan uudestaan!")
+
+# CONTINUE KATTILA FLOW UP
+
+### END FAILURE
+
+#momotalk("Akuliina auttaa sinua nyt.")
+#momotalk("Noin! Nythän se onnistui.")
+#momotalk("Kokeillaan seuraavaa viittomaa.")
+
+### NO REACTION
+
+#momotalk("Hei, toista perässä mitä teen.")
+
+# CONTINUE KATTILA FLOW UP
+
+# GOODBYE FLOW
+
+#momotalk("Kiitos! Minulla oli hauskaa.")
+#momotalk("Hei hei.")
+#wavebye() NOT IMPLEMENTED
+
+#lookahead()

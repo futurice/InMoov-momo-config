@@ -4,9 +4,10 @@ def lamppu():
   fullspeed()
 
   # right palm down
-
   i01.moveHand("right",0,0,0,0,0,140)
 
+  # arm up
+  i01.moveArm("right", 100, 104, 174, 115)
 
   # right thumb first
   print commands.getoutput('/bin/echo "1050,50,50,50,50" | /usr/bin/nc localhost 10000')
@@ -16,12 +17,10 @@ def lamppu():
   # right hand fist
   print commands.getoutput('/bin/echo "1050,1000,1000,1000,1000" | /usr/bin/nc localhost 10000')
 
-  # arm up
-  i01.moveArm("right", 100, 104, 174, 115)
+  sleep(6)
 
-  sleep(7)
-
-  # open hand
+  # open hand and move a bit
+  i01.moveArm("right", 85, 94, 164, 115)
   print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10000')
 
   sleep(3)
