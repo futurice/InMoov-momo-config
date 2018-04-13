@@ -12,31 +12,73 @@ setspeed()
 #wavehello()
 
 #momotalk("Mikä sinun nimesi on?")
-#momotalk("Hei[[slnc 100]]") # <---- ADD NAME HERE IF YOU CATCH IT
+#momotalk("Hei[[slnc 100]] Teemu") # <---- ADD NAME HERE IF YOU CATCH IT
 #momotalk("Tehdään yhdessä tehtäviä")
 #momotalk("Katso[[slnc 100]]mitä minä teen.")
 #momotalk("Tee [[slnc 100]]sama perässä.")
 
 ## KATTILA FLOW
 
+#attentionlights() NOT IMPLEMENTED
+#momopic("kattila")
 #momotalk("Kattila")
-
 #kattila()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+## ANKKA FLOW
+
+#momotalk("Ankka")
+#attentionlights() NOT IMPLEMENTED
+#momopic("ankka")
+ankka()
+
+## TALO FLOW
+
+#momotalk("Talo")
+#attentionlights() NOT IMPLEMENTED
+#momopic("talo")
+#talo()
+
+## VASARA FLOW
+
+#momotalk("Vasara")
+#attentionlights() NOT IMPLEMENTED
+#momopic("vasara")
+#vasara()
+
+## LAMPPU FLOW
+
+#momotalk("Lamppu")
+#attentionlights() NOT IMPLEMENTED
+#momopic("lamppu")
+#lamppu()
+
+## AUTO FLOW
+
+#momotalk("Auto")
+#attentionlights() NOT IMPLEMENTED
+#momopic("auto")
+#auto()
+
 
 #momotalk("Nyt on sinun vuorosi.")
 #momotalk("Tee [[slnc 50]]samoin.")
 
 ### SUCCESS
 
+#jingle()
 #twistpeukku()
+
 #momotalk("Hyvä![[slnc 200]] Oikein meni.")
-#momotalk("Kokeillaan seuraavaa viittomaa.")
-#jingle() 
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
 
 ### FAILURE
 
-#momotalk("Hyvä yritys! Ei mennyt ihan oikein.")
-#momotalk("Kokeillaan uudestaan!")
+#momotalk("Hyvä yritys![[slnc 300]]Ei mennyt ihan oikein.")
+#momotalk("Ko keillaan uudestaan!")
+#kattilaflow
 
 # CONTINUE KATTILA FLOW UP
 
@@ -44,8 +86,8 @@ setspeed()
 
 #momotalk("Akuliina auttaa sinua nyt.")
 #momotalk("Noin! Nythän se onnistui.")
-#momotalk("Kokeillaan seuraavaa viittomaa.")
-
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+ 
 ### NO REACTION
 
 #momotalk("Hei, toista perässä mitä teen.")
@@ -54,8 +96,10 @@ setspeed()
 
 # GOODBYE FLOW
 
-#momotalk("Kiitos! Minulla oli hauskaa.")
+#momotalk("Kiitos![[slnc 300]] Minulla oli hauskaa.")
 #momotalk("Hei hei.")
-#wavebye() NOT IMPLEMENTED
 
 #lookahead()
+#wavebye()
+
+
