@@ -1,0 +1,410 @@
+#MAISA
+#Jauho
+#Hiihto
+#Talo
+#Ankka
+#Kattila
+#Pallo
+#Lamppu
+#Kissa
+#Leipa
+
+### BEGIN
+
+#momopic("white")
+
+# INTRODUCTION FLOW
+
+#fullspeed()
+#setspeed()
+
+#lookahead()
+
+#momotalk("Hei,[[slnc 300]] olen Momo.")
+#momotalk("Olen ropotti.")
+
+#lookleftandright()
+#wavehello()
+
+#momotalk("Mikä sinun nimesi on?")
+#momotalk("Hei[[slnc 100]] Maisa") # <---- ADD NAME HERE IF YOU CATCH IT
+#momotalk("Tehdään yhdessä tehtäviä")
+#momotalk("Katso[[slnc 100]]mitä minä teen.")
+#momotalk("Tee [[slnc 100]]sama perässä.")
+
+## JAUHO
+
+#jauho()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### SUCCESS
+
+#twistpeukku()
+#momotalk("Hyvä![[slnc 200]] Oikein meni.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+### FAILURE
+
+#momotalk("Hyvä yritys![[slnc 300]]Ei mennyt ihan oikein.")
+#momotalk("Ko keillaan uudestaan!")
+
+#jauho()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+
+### NO REACTION
+
+#momotalk("Hei, toista perässä mitä teen.")
+
+#jauho()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+
+### END FAILURE
+
+#momotalk("Akuliina auttaa sinua nyt.")
+#momotalk("Noin! Nythän se onnistui.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+### HIIHTO
+
+#hiihto()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### SUCCESS
+
+#twistpeukku()
+#momotalk("Hyvä![[slnc 200]] Oikein meni.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+### FAILURE
+
+#momotalk("Hyvä yritys![[slnc 300]]Ei mennyt ihan oikein.")
+#momotalk("Ko keillaan uudestaan!")
+
+#hiihto()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### NO REACTION
+
+#momotalk("Hei, toista perässä mitä teen.")
+
+#hiihto()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### END FAILURE
+
+#momotalk("Akuliina auttaa sinua nyt.")
+#momotalk("Noin! Nythän se onnistui.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+## TALO
+
+#LIGHTS
+#talo()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### SUCCESS
+
+#twistpeukku()
+#momotalk("Hyvä![[slnc 200]] Oikein meni.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+### FAILURE
+
+#momotalk("Hyvä yritys![[slnc 300]]Ei mennyt ihan oikein.")
+#momotalk("Ko keillaan uudestaan!")
+
+##LIGHTS
+#talo()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### NO REACTION
+
+#momotalk("Hei, toista perässä mitä teen.")
+
+##LIGHTS
+#talo()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### END FAILURE
+
+#momotalk("Akuliina auttaa sinua nyt.")
+#momotalk("Noin! Nythän se onnistui.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+## ANKKA
+
+#ankka()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### SUCCESS
+
+#twistpeukku()
+#momotalk("Hyvä![[slnc 200]] Oikein meni.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+### FAILURE
+
+#momotalk("Hyvä yritys![[slnc 300]]Ei mennyt ihan oikein.")
+#momotalk("Ko keillaan uudestaan!")
+
+#ankka()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### NO REACTION
+
+#momotalk("Hei, toista perässä mitä teen.")
+
+#ankka()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### END FAILURE
+
+#momotalk("Akuliina auttaa sinua nyt.")
+#momotalk("Noin! Nythän se onnistui.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+## KATTILA
+
+#momopic("kattila")
+#kattila()
+#momopic("white")
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### SUCCESS
+
+#twistpeukku()
+#momotalk("Hyvä![[slnc 200]] Oikein meni.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+### FAILURE
+
+#momotalk("Hyvä yritys![[slnc 300]]Ei mennyt ihan oikein.")
+#momotalk("Ko keillaan uudestaan!")
+
+#momopic("kattila")
+#kattila()
+#momopic("white")
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### NO REACTION
+
+#momotalk("Hei, toista perässä mitä teen.")
+
+#momopic("kattila")
+#kattila()
+#momopic("white")
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### END FAILURE
+
+#momotalk("Akuliina auttaa sinua nyt.")
+#momotalk("Noin! Nythän se onnistui.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+## PALLO
+
+## LIGHTS
+#pallo()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### SUCCESS
+
+#twistpeukku()
+#momotalk("Hyvä![[slnc 200]] Oikein meni.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+### FAILURE
+
+#momotalk("Hyvä yritys![[slnc 300]]Ei mennyt ihan oikein.")
+#momotalk("Ko keillaan uudestaan!")
+
+## LIGHTS
+#pallo()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### NO REACTION
+
+#momotalk("Hei, toista perässä mitä teen.")
+
+## LIGHTS
+#pallo()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### END FAILURE
+
+#momotalk("Akuliina auttaa sinua nyt.")
+#momotalk("Noin! Nythän se onnistui.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+## LAMPPU
+
+#momopic("lamppu")
+#lamppu()
+#momopic("white")
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### SUCCESS
+
+#twistpeukku()
+#momotalk("Hyvä![[slnc 200]] Oikein meni.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+### FAILURE
+
+#momotalk("Hyvä yritys![[slnc 300]]Ei mennyt ihan oikein.")
+#momotalk("Ko keillaan uudestaan!")
+
+#momopic("lamppu")
+#lamppu()
+#momopic("white")
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### NO REACTION
+
+#momotalk("Hei, toista perässä mitä teen.")
+
+#momopic("lamppu")
+#lamppu()
+#momopic("white")
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### END FAILURE
+
+#momotalk("Akuliina auttaa sinua nyt.")
+#momotalk("Noin! Nythän se onnistui.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+## KISSA
+
+#momopic("kissa")
+#kissa()
+#momopic("clear")
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### SUCCESS
+
+#twistpeukku()
+#momotalk("Hyvä![[slnc 200]] Oikein meni.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+### FAILURE
+
+#momotalk("Hyvä yritys![[slnc 300]]Ei mennyt ihan oikein.")
+#momotalk("Ko keillaan uudestaan!")
+
+#momopic("kissa")
+#kissa()
+#momopic("clear")
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### NO REACTION
+
+#momotalk("Hei, toista perässä mitä teen.")
+
+#momopic("kissa")
+#kissa()
+#momopic("clear")
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### END FAILURE
+
+#momotalk("Akuliina auttaa sinua nyt.")
+#momotalk("Noin! Nythän se onnistui.")
+#momotalk("Ko keillaan seuraavaa viit tomaa.")
+
+## LEIPA
+
+## LIGHTS
+#leipa()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### SUCCESS
+
+#twistpeukku()
+#momotalk("Hyvä![[slnc 200]] Oikein meni.")
+
+### FAILURE
+
+#momotalk("Hyvä yritys![[slnc 300]]Ei mennyt ihan oikein.")
+#momotalk("Ko keillaan uudestaan!")
+
+## LIGHTS
+#leipa()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### NO REACTION
+
+#momotalk("Hei, toista perässä mitä teen.")
+
+## LIGHTS
+#leipa()
+
+#momotalk("Nyt on sinun vuorosi.")
+#momotalk("Tee [[slnc 50]]samoin.")
+
+### END FAILURE
+
+#momotalk("Akuliina auttaa sinua nyt.")
+#momotalk("Noin! Nythän se onnistui.")
+
+# GOODBYE FLOW
+
+#momotalk("Kiitos![[slnc 300]] Minulla oli hauskaa.")
+#momotalk("Hei hei.")
+
+#lookahead()
+#wavebye()

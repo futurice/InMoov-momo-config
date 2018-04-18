@@ -19,7 +19,7 @@ def kissa():
   # left arm up
   i01.moveArm("left", 55, 36, 160, 120)
   sleep(5)
-  
+
   momotalk("kissa")
 
   sleep(1)
@@ -28,27 +28,27 @@ def kissa():
 
   # pet the cat
   i01.moveHand("right",180,180,180,180,180,161)
-  i01.moveArm("right", 75, 66, 160, 129)
+  i01.moveArm("right", 80, 66, 160, 129)
   sleep(0.8)
 
   # pet the cat
   i01.moveHand("right",180,180,180,180,180,171)
-  i01.moveArm("right", 55, 74, 160, 129)
+  i01.moveArm("right", 60, 74, 160, 129)
   sleep(0.8)
 
   # pet the cat
   i01.moveHand("right",180,180,180,180,180,161)
-  i01.moveArm("right", 75, 66, 160, 129)
+  i01.moveArm("right", 80, 66, 160, 129)
   sleep(0.8)
 
   # pet the cat
   i01.moveHand("right",180,180,180,180,180,171)
-  i01.moveArm("right", 55, 74, 160, 129)
+  i01.moveArm("right", 60, 74, 160, 129)
   sleep(0.8)
 
   # pet the cat
   i01.moveHand("right",180,180,180,180,180,161)
-  i01.moveArm("right", 75, 66, 160, 129)
+  i01.moveArm("right", 80, 66, 160, 129)
   sleep(0.8)
 
   i01.moveHand("right",180,180,180,180,180,164)
@@ -71,4 +71,3 @@ def kissa():
   sleep(2)
 
   i01.finishedGesture()
-
