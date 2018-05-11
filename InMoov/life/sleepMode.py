@@ -40,9 +40,9 @@ def sleepModeWakeUp():
     if isHeadActivated:
       head.neck.setVelocity(50)
       head.neck.moveToBlocking(head.neck.getRest())
-  else:
-    if talkToInmoovFrQueue("MRLALIVE")=="OK":talkEvent(lang_OsSynced)
-    welcomeMessage()
+# else:
+#   if talkToInmoovFrQueue("MRLALIVE")=="OK":talkEvent(lang_OsSynced)
+#   welcomeMessage()
   i01.RobotIsSleeping=False
   if isNeopixelActivated:i01.stopNeopixelAnimation()
   fullspeed()

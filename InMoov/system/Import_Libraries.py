@@ -24,3 +24,5 @@ import glob
 import ConfigParser
 import inspect
 import commands
+import socket
+import sys

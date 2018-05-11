@@ -38,8 +38,9 @@ i01 = Runtime.createAndStart("i01", "InMoov")
 ##############
 # robot checkup and initialisation ( skeleton & services )
 RuningFolder="InMoov"
-execfile(RuningFolder+'/system/InitCheckup.py')
 
+execfile(RuningFolder+'/system/InitCheckup.py')
+execfile(RuningFolder+'/custom/InMoov_custom.py')
 
 # ###################################################################################
 # SAMPLE COMMANDS 
@@ -73,4 +74,4 @@ def fingermiddle():
 
 ##############
 #Go further !!!! and write some code lines inside custom/InMoov_custom.py
-execfile(RuningFolder+'custom/InMoov_custom.py')
+#execfile(RuningFolder+'custom/InMoov_custom.py')
