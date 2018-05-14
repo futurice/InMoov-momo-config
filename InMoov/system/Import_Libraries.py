@@ -1,3 +1,4 @@
+from __future__ import print_function
 from java.lang import String
 from org.myrobotlab.net import BareBonesBrowserLaunch
 from org.myrobotlab.arduino.Msg import MRLCOMM_VERSION

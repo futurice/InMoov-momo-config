@@ -2,12 +2,12 @@
 [MAIN]
 
 ;my rightport if used ( /dev/ttyUSB0 for linux/macos )
-MyRightPort=/dev/cu.usbmodem141131
+MyRightPort=/dev/cu.usbmodem141161
 BoardTypeMyRightPort="atmega2560"
 ArefRightArduino="DEFAULT"
 
 ;my leftport if used
-MyLeftPort=/dev/cu.usbmodem141141
+MyLeftPort=/dev/cu.usbmodem141171
 BoardTypeMyLeftPort="atmega2560"
 ArefLeftArduino="DEFAULT"
 

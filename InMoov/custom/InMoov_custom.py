@@ -15,7 +15,7 @@ def listen():
     alldata = ''
 
     # Bind the socket to the port
-    server_address = ('localhost', 20000)
+    server_address = ('localhost', 15000)
     sock.bind(server_address)
 
     # Listen for incoming connections
@@ -32,7 +32,9 @@ def listen():
                 if data:
                     alldata += data
                 else:
-                    eval(alldata)
+                    print commands.getoutput('/bin/echo "alldata ' + alldata + '\n" >> /tmp/debuggia')
+                    #eval(alldata)
+                    exec(alldata)
                     alldata = ''
                     break
         finally:
