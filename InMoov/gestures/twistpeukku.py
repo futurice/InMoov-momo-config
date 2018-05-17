@@ -24,12 +24,8 @@ def twistpeukku():
   # close right fist
   print commands.getoutput('/bin/echo "600,900,900,900,900" | /usr/bin/nc localhost 10000')
 
-  # lower right arm
-  i01.moveArm("right", 8, 90, 90, 90)
-  i01.moveHand("right",0,0,0,0,0,167)
+  sleep(1)
 
-  sleep(2)
-
-  print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10000')
+  rest()
 
   i01.finishedGesture()

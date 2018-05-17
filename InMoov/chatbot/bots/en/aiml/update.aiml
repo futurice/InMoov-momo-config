@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: update.aiml -->
 <!-- Author: Greg Perry -->
-<!-- Last modified: March 04, 2018 -->
+<!-- Last modified: May 17, 2018 -->
 <!--  -->
 <!-- This AIML file is part of the EN 0.1 chat bot knowledge base. -->
 <!--  -->
@@ -20,6 +20,6 @@
 <template>Program AB 0.0.6.26 beta -- AI Foundation Reference AIML 2.1 implementation</template>
 </category>
 <category><pattern>BRAIN BUILD</pattern>
-<template>Sun Mar 04 10:47:22 EET 2018</template>
+<template>Thu May 17 09:44:01 EEST 2018</template>
 </category>
 </aiml>

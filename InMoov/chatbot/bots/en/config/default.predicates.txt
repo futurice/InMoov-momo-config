@@ -8,7 +8,7 @@ husband:who
 favoriteicecream:what
 mother:who
 lastUsername:frank
-tmpname:frank
+tmpname:
 son:who
 favoriteactor:who
 province:which
@@ -64,7 +64,7 @@ niece:who
 jsenabled:true
 street:which
 cat:what
-questionfirstinit:if your name is frank , say yes or no
+questionfirstinit:
 favoritebook:what
 email:what
 favoritecar:what

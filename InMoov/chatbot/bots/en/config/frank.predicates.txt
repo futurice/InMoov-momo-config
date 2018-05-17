@@ -24,6 +24,7 @@ likes:what
 favoritefood:what
 town:which
 wife:who
+courant:
 favoritecolor:what
 them:who
 it:what
@@ -77,4 +78,5 @@ there:where
 baby:who
 location:where
 he:who
+articles:
 age:how many

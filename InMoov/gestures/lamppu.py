@@ -29,15 +29,6 @@ def lamppu():
 
   sleep(3)
 
-  #rest
-  i01.moveArm("right", 20, 90, 90, 97)
-  i01.moveArm("left", 8, 90, 90, 90)
-
-  sleep(1)
-
-  print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10000')
-  print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 20000')
-
-  i01.moveHand("right",0,0,0,0,0,167)
+  rest()
 
   i01.finishedGesture()

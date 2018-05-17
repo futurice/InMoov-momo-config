@@ -55,19 +55,11 @@ def kissa():
 
   sleep(3)
 
-  # rest, take left hand down first
+  # custom rest, take left hand down first
 
   i01.moveArm("left", 8, 90, 90, 90)
-  sleep(0.5)
+  sleep(0.2)
 
-  i01.moveArm("right", 20, 90, 90, 97)
-
-  print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10000')
-  print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 20000')
-
-  i01.moveHand("right",180,180,180,180,180,167)
-  i01.moveHand("left",180,180,180,180,180,50)
-
-  sleep(2)
+  rest()
 
   i01.finishedGesture()

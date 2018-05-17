@@ -15,6 +15,9 @@ def rest():
   
   if isLeftArmActivated:
     i01.leftArm.rest()
+
+  print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10000')
+  print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 20000')
     
 # ##############################################################################
 #         ROBOT REST POSITIONS ( full )
