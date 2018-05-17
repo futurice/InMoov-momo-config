@@ -41,6 +41,12 @@ def luuppi():
   rt=102
   
   while True:
+
+    # if this one hits, a gesture is running, so we will skip a round
+    if i01.RobotCanMoveRandom == False:
+      sleep(1)
+      continue
+
     rounds+=1
   
     if randint(0,1) == 0:
