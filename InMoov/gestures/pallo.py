@@ -3,6 +3,7 @@ def pallo():
   i01.startedGesture()
 
   fullspeed()
+  rest()
 
   # open hands
 

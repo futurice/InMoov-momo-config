@@ -3,6 +3,7 @@ def talo():
   i01.startedGesture()
 
   fullspeed()
+  rest()
 
   # open hands
 

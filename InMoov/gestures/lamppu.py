@@ -2,6 +2,7 @@ def lamppu():
   i01.startedGesture()
 
   fullspeed()
+  rest()
 
   # right palm down
   i01.moveHand("right",0,0,0,0,0,161)

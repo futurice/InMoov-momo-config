@@ -2,6 +2,7 @@ def hiihto():
   i01.startedGesture()
 
   fullspeed()
+  rest()
 
   # wrists to rest
 

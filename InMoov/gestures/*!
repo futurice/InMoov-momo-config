@@ -4,6 +4,15 @@ def luuppi():
   
   rounds=0
   
+  i01.setArmSpeed("right", 0.1, 0.1, 0.1, 0.1);
+  i01.setArmSpeed("left", 0.1, 0.1, 0.1, 0.1);
+  i01.setHeadSpeed(0.1, 0.1)
+  # only the last value matters for hands
+  i01.setHandSpeed("right", 0.75, 0.75, 0.75, 0.75, 0.75, 0.1)
+  i01.setHandSpeed("left", 0.75, 0.75, 0.75, 0.75, 0.75, 0.1)
+  # only first value matters for torso
+  i01.setTorsoSpeed(0.1, 0.1, 0.1)
+  
   # rest values: left bicep, left rotate, left shoulder, left omoplate
   
   rlb=8
@@ -31,30 +40,12 @@ def luuppi():
   # rest value: torso
   rt=102
   
-  # was a gesture running the last round?
-  lastround=False
-  
   while True:
 
     # if this one hits, a gesture is running, so we will skip a round
     if i01.RobotCanMoveRandom == False:
-      lastround=True
       sleep(1)
       continue
-
-    if lastround == True:
-      lastround=False
-      sleep(3)
-
-    # these need to be here; if a gesture is run in middle, it will reset to fullspeed
-    i01.setArmSpeed("right", 0.1, 0.1, 0.1, 0.1);
-    i01.setArmSpeed("left", 0.1, 0.1, 0.1, 0.1);
-    i01.setHeadSpeed(0.1, 0.1)
-    # only the last value matters for hands
-    i01.setHandSpeed("right", 0.75, 0.75, 0.75, 0.75, 0.75, 0.1)
-    i01.setHandSpeed("left", 0.75, 0.75, 0.75, 0.75, 0.75, 0.1)
-    # only first value matters for torso
-    i01.setTorsoSpeed(0.1, 0.1, 0.1)
 
     rounds+=1
   

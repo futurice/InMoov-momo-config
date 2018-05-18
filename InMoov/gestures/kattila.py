@@ -3,6 +3,7 @@ def kattila():
   i01.startedGesture()
 
   fullspeed()
+  rest()
 
   # make fists
 

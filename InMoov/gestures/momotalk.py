@@ -1,5 +1,5 @@
 def momotalk(line):
-  i01.startedGesture()
+#  i01.startedGesture()
   # open mouth
   i01.head.jaw.moveTo(90)
   # start talking
@@ -9,4 +9,4 @@ def momotalk(line):
   sleep(wait)
   # close mouth
   i01.head.jaw.moveTo(0)
-  i01.finishedGesture()
+#  i01.finishedGesture()

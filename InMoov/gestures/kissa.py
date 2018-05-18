@@ -1,6 +1,7 @@
 def kissa():
   i01.startedGesture()
   fullspeed()
+  rest()
 
   # make fists
   print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 10000')
