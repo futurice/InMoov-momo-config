@@ -12,7 +12,7 @@ def ankka():
 
   # palms down
   
-  i01.moveHand("right",180,180,180,180,180,157)
+  i01.moveHand("right",180,180,180,180,180,146)
   i01.moveHand("left",180,180,180,180,180,60)
 
   # arms up

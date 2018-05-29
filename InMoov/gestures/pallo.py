@@ -53,7 +53,7 @@ def pallo():
 
   sleep(0.5)
 
-  i01.moveHand("right",180,180,180,180,180,174)
+  i01.moveHand("right",180,180,180,180,180,178)
   i01.moveHand("left",180,180,180,180,180,37)
   i01.moveArm("right", 35, 52, 153, 100)
   i01.moveArm("left", 25, 42, 143, 90)

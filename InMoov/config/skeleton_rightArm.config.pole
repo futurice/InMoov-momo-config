@@ -1,23 +1,23 @@
-;----------------------------- LEFT ARM CONFIGURATION ----------------------------------------
+;----------------------------- RIGHT ARM CONFIGURATION ----------------------------------------
 [MAIN]
-isLeftArmActivated=True
+isRightArmActivated=True
 
 [SERVO_MINIMUM_MAP_OUTPUT]
 ;your servo minimal limits
-bicep=8
+bicep=20
 rotate=0
 shoulder=90
 omoplate=97
 
 [SERVO_MAXIMUM_MAP_OUTPUT]
 ;your servo maximal limits
-bicep=90
-rotate=130
-shoulder=180
-omoplate=170
+bicep=100
+rotate=180
+shoulder=174
+omoplate=155
 
 [SERVO_REST_POSITION]
-bicep=8
+bicep=20
 rotate=90
 shoulder=90
 omoplate=97
@@ -26,33 +26,7 @@ omoplate=97
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ;----------------------------------- ADVANCED CONFIGURATION --------------------------------------------------
-
-[MINIMUM_MAP_INPUT]
-bicep=8
-rotate=0
-shoulder=90
-omoplate=97
-
-[MAXIMUM_MAP_INPUT]
-bicep=90
-rotate=130
-shoulder=180
-omoplate=170
 
 [SERVO_INVERTED]
 bicep=False
@@ -72,12 +46,23 @@ rotate=9
 shoulder=10
 omoplate=11
 
+[MINIMUM_MAP_INPUT]
+bicep=20
+rotate=0
+shoulder=90
+omoplate=97
+
+[MAXIMUM_MAP_INPUT]
+bicep=100
+rotate=180
+shoulder=174
+omoplate=155
+
 [SERVO_AUTO_DISABLE]
 bicep=True
 rotate=True
 shoulder=True
 omoplate=True
-
 
 ;----------------------------------- END --------------------------------------------------
 
