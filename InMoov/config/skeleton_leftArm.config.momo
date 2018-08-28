@@ -7,7 +7,7 @@ isLeftArmActivated=True
 bicep=8
 rotate=0
 shoulder=90
-omoplate=90
+omoplate=97
 
 [SERVO_MAXIMUM_MAP_OUTPUT]
 ;your servo maximal limits
@@ -20,7 +20,7 @@ omoplate=170
 bicep=8
 rotate=90
 shoulder=90
-omoplate=90
+omoplate=97
 
 
 
@@ -46,7 +46,7 @@ omoplate=90
 bicep=8
 rotate=0
 shoulder=90
-omoplate=90
+omoplate=97
 
 [MAXIMUM_MAP_INPUT]
 bicep=90

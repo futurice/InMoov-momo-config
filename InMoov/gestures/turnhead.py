@@ -1,23 +1,40 @@
 def turnhead(coords):
   i01.startedGesture()
 
+  i01.setHeadSpeed(0.6, 0.6)
+
+  global globneck
+  global globrot
+
+  # x and y coordinates on the dashboard 100x100 grid
   lcoords = coords.split('/')
-  x = lcoords[0]
-  y = lcoords[1]
+  x = int(lcoords[0])
+  y = int(lcoords[1])
 
-  talk("x on "+str(x))
-  talk("y on "+str(y))
+  # need to flip them as the grid is in opposite alignment
+  rothead = round(100 - x) 
+  neck = round(100 - y)
 
-  rothead = int(x) + 40;
-  neck = int(y) + 10;
+  # our field of vision is 70 degrees, so we want x of -35 to 35
+  rothead = int(rothead) * 0.7 - 35
 
-  if neck < 25 :
-    neck = 25
+  # the absolute position is old x plus the delta
+  rothead = int(globrot) + int(rothead)
 
-  if neck > 115 :
-    neck = 115
+  if rothead > 180 :
+    rothead = 180
 
-  talk("neck on " + str(neck))
-  talk("rot on " + str(rothead))
+  if rothead < 0 :
+    rothead = 0
+
+  # talk("rot on " + str(rothead))
+
+  i01.moveHead(neck, rothead)
+
+  # store the new value into the global variable
+  globrot = rothead
+
+  i01.head.rothead.setVelocity(100)
+  i01.head.neck.setVelocity(100)
 
   i01.finishedGesture()

@@ -13,12 +13,12 @@ def talo():
   # wrists to rest
   # bring arms together in front of face
 
-  i01.moveHand("right",180,180,180,180,180,165)
-  i01.moveHand("left",180,180,180,180,180,53)
+  i01.moveHand("right",180,180,180,180,180,158)
+  i01.moveHand("left",180,180,180,180,180,54)
 
-  i01.moveArm("right", 100, 78, 168, 100)
+  i01.moveArm("right", 90, 82, 174, 100)
   sleep(1)
-  i01.moveArm("left", 90, 65, 157, 90)
+  i01.moveArm("left", 90, 67, 157, 90)
 
   sleep(6)
 

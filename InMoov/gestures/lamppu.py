@@ -5,7 +5,7 @@ def lamppu():
   rest()
 
   # right palm down
-  i01.moveHand("right",0,0,0,0,0,161)
+  i01.moveHand("right",0,0,0,0,0,150)
 
   # arm up
   i01.moveArm("right", 100, 104, 174, 115)

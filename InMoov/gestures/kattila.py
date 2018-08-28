@@ -12,8 +12,8 @@ def kattila():
 
   # palms a bit up
 
-  i01.moveHand("right",180,180,180,180,180,170)
-  i01.moveHand("left",180,180,180,180,180,47)
+  i01.moveHand("right",180,180,180,180,180,163)
+  i01.moveHand("left",180,180,180,180,180,51)
 
   # arms up
 

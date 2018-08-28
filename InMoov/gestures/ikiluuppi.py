@@ -3,6 +3,8 @@ def ikiluuppi():
   from random import randint
   
   rounds=0
+  global stoploop
+  
   
   # rest values: left bicep, left rotate, left shoulder, left omoplate
   
@@ -45,6 +47,13 @@ def ikiluuppi():
     if lastround == True:
       lastround=False
       sleep(3)
+
+    # stoploop flag has been set, so let's go to rest and exit
+    if stoploop == 1:
+      stoploop = 0
+      rest()
+      sleep(3)
+      break
 
     # these need to be here; if a gesture is run in middle, it will reset to fullspeed
     i01.setArmSpeed("right", 0.5, 0.5, 0.5, 0.5);

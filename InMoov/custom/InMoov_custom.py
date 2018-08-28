@@ -8,6 +8,10 @@
 import socket
 import sys
 
+globneck = 60 
+globrot = 90
+stoploop = 0
+
 def listen():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -19,7 +23,7 @@ def listen():
     sock.bind(server_address)
 
     # Listen for incoming connections
-    sock.listen(1)
+    sock.listen(5)
 
     while True:
         # Wait for a connection
@@ -33,12 +37,14 @@ def listen():
                     alldata += data
                 else:
                     print commands.getoutput('/bin/echo "alldata ' + alldata + '\n" >> /tmp/debuggia')
-                    #eval(alldata)
                     exec(alldata)
                     alldata = ''
                     break
         finally:
             # Clean up the connection
-            connection.close()
+             try:
+               connection.shutdown(socket.SHUT_RDWR)
+             except socket.error:
+               pass
 
 listen()

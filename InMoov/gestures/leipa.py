@@ -8,7 +8,7 @@ def leipa():
   print commands.getoutput('/bin/echo "50,50,50,50,50" | /usr/bin/nc localhost 20000')
 
   # right arm up first, goes higher, palm down
-  i01.moveHand("right",180,180,180,180,180,163)
+  i01.moveHand("right",180,180,180,180,180,155)
   i01.moveArm("right", 75, 73, 160, 129)
   sleep(1)
 

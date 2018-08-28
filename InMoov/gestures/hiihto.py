@@ -4,11 +4,6 @@ def hiihto():
   fullspeed()
   rest()
 
-  # wrists to rest
-
-  i01.moveHand("left",180,180,180,180,180,50)
-  i01.moveHand("right",180,180,180,180,180,167)
-
   # make fists
 
   print commands.getoutput('/bin/echo "900,900,900,900,900" | /usr/bin/nc localhost 10000')
